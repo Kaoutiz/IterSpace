@@ -6,10 +6,23 @@ body{
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    color: #fff;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 header, section{
-    min-height:100vh;
+    height:100vh;
     display: flex;
 }
 
@@ -18,8 +31,22 @@ header, section{
     margin: 0 auto;
 }
 
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .rounded-btn{
-    /* pas encore coder */
+    min-width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 button{
@@ -29,14 +56,37 @@ button{
 h1{
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 200;
 }
 
 /* END: Global */
 
 /* BEGIN: Header */
 
-header{
-    background-color: red;
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: 300;
+}
+
+nav ul .bx{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .title-site-light{
@@ -49,7 +99,47 @@ header{
 
 #overlay{
     position: absolute;
-    z-index: 999999;
+    width: 100%;
+    padding: 20px;
+}
+
+video{
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#title-zone{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+#title-site{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+
+.compteur-box{
+    width: 200px;
+    height: 150px;
+    margin-right: 50px;
+}
+
+.number{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.title-compteur{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 /* END: Header */
