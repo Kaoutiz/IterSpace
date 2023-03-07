@@ -50,6 +50,15 @@ section{
     margin-top: 20px;
 }
 
+.rounded-btn:hover{
+    background-image: -moz-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
+    background-image: -webkit-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
+    background-image: -ms-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
+} 
+
+
+
+  
 button{
     /* pas encore coder */
 }
