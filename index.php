@@ -21,7 +21,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- END: JQuery -->
         <header>
-            <div class="container">
+            <video width="100%" autoplay loop muted>
+                <source src="assets/videos/header.mp4" type="video/mp4">
+            </video>
+            <div id="overlay">
                 <nav>
                     <ul class="nav-left">
                         <li><a href="#">Qui sommes-npus ?</a></li>
@@ -52,7 +55,7 @@
                         <p class="title-compteur">Fusées dispnibles</p>   
                     </div>
                 </div>
-            </div>
+            </div>   
         </header>
         <section id="presentation">
             <div class="container">

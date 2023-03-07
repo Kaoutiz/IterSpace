@@ -47,6 +47,11 @@ header{
     color: #fff;
 }
 
+#overlay{
+    position: absolute;
+    z-index: 999999;
+}
+
 /* END: Header */
 
 /* BEGIN: Presentation */
