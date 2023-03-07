@@ -84,11 +84,7 @@
                 <!-- Votre code ici... -->
             </div>
         </section>
-        <footer>
-            <div class="container">
-                <!-- Votre code ici... -->
-            </div>
-        </footer>
+        <?php include 'assets/templates/footer.php';?>
     </body>
     <!-- BEGIN: LIBRAIRIES SCRIPTS -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
