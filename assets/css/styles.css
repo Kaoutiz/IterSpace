@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* BEGIN: Global */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+header, section{
+    min-height:100vh;
+    display: flex;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.rounded-btn{
+    /* pas encore coder */
+}
+
+button{
+    /* pas encore coder */
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* END: Global */
+
+/* BEGIN: Header */
+
+header{
+    background-color: red;
+}
+
+.title-site-light{
+    font-weight: 100;
+}
+
+#title-site h1{
+    color: #fff;
+}
+
+/* END: Header */
+
+/* BEGIN: Presentation */
+
+#presentation{
+    background-color: blue;
+}
+
+/* END: Presentation */
+
+/* BEGIN: Actus */
+
+#actus{
+    background-color: green;
+}
+
+/* END: Actus */
+
+#reservation{
+    background-color: yellow;
+}
+
+/* BEGIN: Produits */
+
+#produits{
+    background-color: pink;
+}
+
+/* END: Produits */
+
+/* BEGIN: Testimonial */
+
+#testimonial{
+    background-color: purple;
+}
+
+/* END: Testimonial */
+
+/* BEGIN: Footer */
+
+footer{
+    background-color: black;
+}
+
+/* END: Footer */
