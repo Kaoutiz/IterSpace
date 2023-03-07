@@ -27,21 +27,23 @@
             <div id="overlay">
                 <nav>
                     <ul class="nav-left">
-                        <li><a href="#">Qui sommes-npus ?</a></li>
+                        <li><a href="#">Qui sommes-nous ?</a></li>
                         <li><a href="#">Catalogue</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <ul class="nav-right">
+                    <ul class="nav-right d-flex align-center">
                         <li><a href="#">Se connecter</a></li>
                         <i class='bx bx-menu'></i>
                     </ul>
                 </nav>
-                <div id="title-site">
-                    <h1><span class="title-site-light">iter</span>space</h1>
-                    <h2>Un chemin vers l'espace</h2>
-                    <button class="rounded-btn">Réservez maintenant</button>
+                <div id="title-zone">
+                    <div id="title-site">
+                        <h1><span class="title-site-light">iter</span>space</h1>
+                        <h2>Un chemin vers l'espace</h2>
+                        <button class="rounded-btn">Réservez maintenant</button>
+                    </div>
                 </div>
-                <div id="compteur">
+                <div class="d-flex justify-content-center align-center text-center">
                     <div class="compteur-box">
                         <p class="number">958</p>
                         <p class="title-compteur">Voyage effectués</p>   
@@ -52,7 +54,7 @@
                     </div>
                     <div class="compteur-box">
                         <p class="number">4</p>
-                        <p class="title-compteur">Fusées dispnibles</p>   
+                        <p class="title-compteur">Fusées disponibles</p>   
                     </div>
                 </div>
             </div>   
