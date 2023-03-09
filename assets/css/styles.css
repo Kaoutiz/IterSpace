@@ -21,6 +21,10 @@ a{
     color: #fff;
 }
 
+input{
+    outline: none;
+}
+
 header, section{
     height:100vh;
     display: flex;
@@ -56,7 +60,15 @@ section{
 } 
   
 button{
-    /* pas encore coder */
+    min-width: 200px;
+    height: 40px;
+    border: none;
+    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 h1{
@@ -72,11 +84,16 @@ h2{
     margin-bottom: 20px;
 }
 
+h4{
+    font-weight: 800;
+    font-size: 30px;
+}
+
 .section-title h3 {
     position: relative;
     text-transform: uppercase;
     text-align: center;
-    font-size: 64px;
+    font-size: 65px;
     margin-bottom: 60px;
 }
 
@@ -175,6 +192,10 @@ video{
     background-color: #000113;
 }
 
+#presentation p{
+    font-weight: 200;
+}
+
 .spaceship {
     width: 200px;
 }
@@ -188,6 +209,11 @@ video{
 }
 
 #actus .card {
+    border: none;
+}
+
+#actus .card-footer{
+    background: #fff;
     border: none;
 }
 
@@ -221,7 +247,7 @@ video{
     border: none;
 }
 
-div:before, div:after{
+.outer:before, .inner:after{
     content:'';
     position:absolute;
     height:15%;
@@ -278,6 +304,10 @@ div:before, div:after{
   .carousel-indicators .active{
     background-color: white;
   }
+
+  .carousel-item p{
+    font-weight: 200;
+  } 
 
 /* END: Testimonials */
 
