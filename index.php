@@ -156,12 +156,15 @@
 
                 <div class="my-5 py-5 text-black">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-md-12">
-                            <div class="text-center mb-4 pb-2">
-                            <i class='bx bxs-quote-left' ></i>
+                        <div id="avis-card" class="col-md-12">
+                            <div class="text-center mb-4 pb-2 quote-left">
+                                <i class='bx bxs-quote-left'></i>
                             </div>
-
-                            <div class="card">
+                            <div class="text-center mt-4 pt-2 quote-right">
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <div class="card outer">
+                                <div class="inner"></div>
                                 <div class="card-body px-4 py-5">
                                     <!-- Carousel -->
                                     <div id="carouselTestimonials" class="carousel slide text-white" data-bs-ride="true">
@@ -273,10 +276,6 @@
                                         </div>
                                         <!-- Carousel : FIN -->
                                     </div>
-                                </div>
-
-                                <div class="text-center mt-4 pt-2">
-                                <i class='bx bxs-quote-right'></i>
                                 </div>
                             </div>
                         </div>    
