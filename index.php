@@ -46,11 +46,11 @@
                 <div class="d-flex justify-content-center align-center text-center">
                     <div class="compteur-box">
                         <p class="number">958</p>
-                        <p class="title-compteur">Voyage effectués</p>   
+                        <p class="title-compteur">Voyages effectués</p>   
                     </div>
                     <div class="compteur-box">
                         <p class="number">1052</p>
-                        <p class="title-compteur">Clients satisfait</p>   
+                        <p class="title-compteur">Clients satisfaits</p>   
                     </div>
                     <div class="compteur-box">
                         <p class="number">4</p>
@@ -66,7 +66,54 @@
         </section>
         <section id="actus">
             <div class="container">
-                <!-- Votre code ici... -->
+                <div class="section-title">
+                    <div class="red-line"></div>
+                    <h3>Actualités</h3>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Skyscrapers"/>
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Title</h5>
+                                <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="rounded-btn">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Title</h5>
+                                <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="rounded-btn">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Palm Springs Road"/>
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Title</h5>
+                                <p class="card-text text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="rounded-btn">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="reservation">
