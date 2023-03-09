@@ -175,7 +175,7 @@ video{
 /* BEGIN: Presentation */
 
 #presentation{
-    background-color: black;
+    background-color: #000113;
 }
 
 .spaceship {
@@ -208,7 +208,7 @@ video{
 
 /* END: Produits */
 
-/* BEGIN: Testimonial */
+/* BEGIN: Testimonials */
 
 #testimonial{
     background-color: black;
@@ -225,19 +225,17 @@ video{
 }
 
 .carousel-indicators button{
-    border-radius: 32px;
     margin: 0 4px 0 4px;
     width: 10px;
     height: 10px;
     text-align: center;
-    border-color: white;
   }
 
   .carousel-indicators .active{
-    background-color: #000113;
+    background-color: white;
   }
 
-/* END: Testimonial */
+/* END: Testimonials */
 
 /* BEGIN: Footer */
 
