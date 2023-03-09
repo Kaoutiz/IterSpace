@@ -47,7 +47,6 @@ section{
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
-    margin-top: 20px;
 }
 
 .rounded-btn:hover{
@@ -73,6 +72,23 @@ h2{
     font-size: 30px;
     color: #fff;
     font-weight: 200;
+    margin-bottom: 20px;
+}
+
+h3 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.red-line {
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 70px;
 }
 
 /* END: Global */
@@ -168,6 +184,10 @@ video{
 
 #actus{
     background-color: green;
+}
+
+#actus .card {
+    border: none;
 }
 
 /* END: Actus */

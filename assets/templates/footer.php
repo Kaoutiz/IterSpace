@@ -21,7 +21,7 @@
             <a href="tel:#" target="_self" title="">07.07.07.07.07</a>
         </div>
         <div>
-            <h3>Restez informé</h3>
+            <h3>Restez informés</h3>
             <form>
                 <label for="newsletter">Recevez nos offres spéciales et réductions</label>
                 <input type="text" id="newsletter" placeholder="Votre adresse email">
