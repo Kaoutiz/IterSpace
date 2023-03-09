@@ -61,7 +61,28 @@
         </header>
         <section id="presentation">
             <div class="container">
-                <!-- Votre code ici... -->
+                <div class="section-title">
+                    <div class="red-line"></div>
+                    <h3>Presentation</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>Titre</h4>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                        enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt mollit anim id est 
+                        laborum.
+                        </p>
+                    </div>
+                    <div class="col-sm w-100 text-center">
+                        <img src="assets/img/spaceship.png" class="spaceship" alt="vaisseau-spatial"/>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="actus">
@@ -73,7 +94,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Skyscrapers"/>
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-1"/>
                             <div class="card-body">
                                 <h5 class="card-title text-dark">Title</h5>
                                 <p class="card-text text-dark">
@@ -87,7 +108,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-2"/>
                             <div class="card-body">
                                 <h5 class="card-title text-dark">Title</h5>
                                 <p class="card-text text-dark">
@@ -101,7 +122,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="Palm Springs Road"/>
+                            <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-3"/>
                             <div class="card-body">
                                 <h5 class="card-title text-dark">Title</h5>
                                 <p class="card-text text-dark">
@@ -128,7 +149,144 @@
         </section>
         <section id="testimonial">
             <div class="container">
-                <!-- Votre code ici... -->
+                <div class="section-title">
+                    <div class="red-line"></div>
+                    <h3>Testimonials</h3>
+                </div>
+
+                <div class="my-5 py-5 text-black">
+                    <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <div class="text-center mb-4 pb-2">
+                        <i class='bx bxs-quote-left' ></i>
+                        </div>
+
+                        <div class="card">
+                        <div class="card-body px-4 py-5">
+                            <!-- Carousel -->
+                            <div id="carouselTestimonials" class="carousel slide text-white" data-ride="carousel">
+                                <!-- Indicators -->
+                                <div class="carousel-indicators mb-0">
+                                    <button 
+                                        data-target="#carouselTestimonials" 
+                                        data-slide-to="0" 
+                                        class="active"
+                                    ></button>
+                                    <button 
+                                        data-target="#carouselTestimonials" 
+                                        data-slide-to="1"
+                                    ></button>
+                                    <button 
+                                        data-target="#carouselTestimonials" 
+                                        data-slide-to="2"
+                                    ></button>
+                                </div>
+
+                                <!-- Contenu -->
+                                <div class="carousel-inner pb-5">
+                                    <!-- Témoignage 1 -->
+                                    <div class="carousel-item active">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-lg-10 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-lg-4 d-flex justify-content-center">
+                                                    <img src="assets/img/astronaute.jpg"
+                                                        class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="First slide" width="150"
+                                                        height="150" />
+                                                    </div>
+                                                    <div
+                                                    class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                                    <h4 class="mb-4">Elon Musk</h4>
+                                                    <p class="mb-0 pb-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                                        aliquam amet animi blanditiis consequatur debitis dicta
+                                                        distinctio, enim error eum iste libero modi nam natus
+                                                        perferendis possimus quasi sint sit tempora voluptatem. Est,
+                                                        exercitationem id ipsa ipsum laboriosam perferendis.
+                                                    </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Témoignage 2 -->
+                                    <div class="carousel-item">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-lg-10 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-lg-4 d-flex justify-content-center">
+                                                    <img src="assets/img/astronaute.jpg"
+                                                        class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="Second slide" width="150"
+                                                        height="150" />
+                                                    </div>
+                                                    <div
+                                                    class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                                    <h4 class="mb-4">Elon Musk</h4>
+                                                    <p class="mb-0 pb-3">
+                                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                        accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                        ipsa quae ab illo inventore veritatis et quasi architecto
+                                                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                                        quia voluptas sit aspernatur.
+                                                    </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Témoignage 3 -->
+                                    <div class="carousel-item">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-lg-10 col-xl-8">
+                                                <div class="row">
+                                                    <div class="col-lg-4 d-flex justify-content-center">
+                                                    <img src="assets/img/astronaute.jpg"
+                                                        class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="Third slide" width="150"
+                                                        height="150" />
+                                                    </div>
+                                                    <div
+                                                    class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                                    <h4 class="mb-4">Elon Musk</h4>
+                                                    <p class="mb-0 pb-3">
+                                                        At vero eos et accusamus et iusto odio dignissimos qui
+                                                        blanditiis praesentium voluptatum deleniti atque corrupti quos
+                                                        dolores et quas molestias excepturi sint occaecati cupiditate
+                                                        non provident, similique sunt in culpa qui officia mollitia
+                                                        animi id laborum et dolorum fuga.
+                                                    </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Contenu : FIN -->
+
+                                <!-- Controls -->
+                                <button class="carousel-control-prev" role="button" href="#carouselTestimonials"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" role="button" href="#carouselTestimonials"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                                <!-- Carousel : FIN -->
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4 pt-2">
+                        <i class='bx bxs-quote-right'></i>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <?php include 'assets/templates/footer.php';?>
