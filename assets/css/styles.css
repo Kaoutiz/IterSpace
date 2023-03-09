@@ -75,12 +75,12 @@ h2{
     margin-bottom: 20px;
 }
 
-h3 {
+.section-title h3 {
     position: relative;
     text-transform: uppercase;
     text-align: center;
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .red-line {
@@ -175,7 +175,11 @@ video{
 /* BEGIN: Presentation */
 
 #presentation{
-    background-color: blue;
+    background-color: black;
+}
+
+.spaceship {
+    width: 200px;
 }
 
 /* END: Presentation */
@@ -183,7 +187,7 @@ video{
 /* BEGIN: Actus */
 
 #actus{
-    background-color: green;
+    background-color: #000113;
 }
 
 #actus .card {
@@ -207,8 +211,31 @@ video{
 /* BEGIN: Testimonial */
 
 #testimonial{
-    background-color: purple;
+    background-color: black;
 }
+
+#testimonial .card{
+    border: solid white;
+    background-color: transparent;
+}
+
+#testimonial i{
+    color: white;
+    font-size: 40px;
+}
+
+.carousel-indicators button{
+    border-radius: 32px;
+    margin: 0 4px 0 4px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-color: white;
+  }
+
+  .carousel-indicators .active{
+    background-color: #000113;
+  }
 
 /* END: Testimonial */
 
