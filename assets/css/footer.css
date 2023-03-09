@@ -5,45 +5,65 @@ footer{
 
 footer .container {
     display: flex;
-  }
-
-footer h3{
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: Roboto;
-    margin-bottom: 32px;
 }
 
-footer .container div{
-    padding: 20px;
+footer .footer-link{
     display: flex;
     flex-direction: column;
-    min-width: 240px;
-    font-size: 12px;
+}
+
+footer h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.newsletter-btn{
+    width: 100%;
+    min-width: 200px;
+    height: 30px;
+    border: none;
+    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
+    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 footer button.rounded-btn{
     border-radius: 0px;
     height: 30px;
 }
-footer .container div div{
-    padding: 0px;
-    flex-direction: row;
+
+footer #partenaires{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 240px;
+    font-size: 12px;
+}
+
+footer #link-partenaires{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-footer form input{
-    margin-bottom: 5px;
-    height: 30px;
-    width: 100%;
-}
-footer form input::placeholder{
-    font-weight: bold;
-    font-size: 16px;
+footer #link-partenaires a{
+    margin-right: 20px;
 }
 
-#spacex-logo{
-    height: auto;
-    width: 50%;
-    color: white;
+footer form input{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer form input::placeholder{
+    font-size: 13px;
+    line-height: 30px;
+    color: #000113;
 }

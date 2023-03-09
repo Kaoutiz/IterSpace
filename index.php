@@ -191,7 +191,7 @@
                                             <div class="carousel-item active">
                                                 <div class="row d-flex justify-content-center">
                                                     <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
+                                                        <div class="row d-flex align-items-center">
                                                             <div class="col-lg-4 d-flex justify-content-center">
                                                                 <img src="assets/img/astronaute.jpg"
                                                                     class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="First slide" width="150"
@@ -216,7 +216,7 @@
                                             <div class="carousel-item">
                                                 <div class="row d-flex justify-content-center">
                                                     <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
+                                                        <div class="row align-items-center">
                                                             <div class="col-lg-4 d-flex justify-content-center">
                                                                 <img src="assets/img/astronaute.jpg"
                                                                     class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="Second slide" width="150"
@@ -241,7 +241,7 @@
                                             <div class="carousel-item">
                                                 <div class="row d-flex justify-content-center">
                                                     <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
+                                                        <div class="row align-items-center">
                                                             <div class="col-lg-4 d-flex justify-content-center">
                                                                 <img src="assets/img/astronaute.jpg"
                                                                     class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="Third slide" width="150"
