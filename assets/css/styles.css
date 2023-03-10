@@ -228,6 +228,31 @@ video{
 #produits{
     background-color: pink;
 }
+#produits h3{
+    z-index: 10;
+    width: auto;
+}
+#produits:hover h3:after{
+    left: 0;
+    transform: scaleX(0.45);
+}
+#produits h3::after{
+    content: '';
+    transform-origin: 0 0;
+    transform: scaleX(0.45);
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: red;
+    opacity: 1;
+    transition: transform .3s, left .3s;
+    z-index: -1;
+    transform: scaleX(0.45);
+    left: 100%;
+}
 
 /* END: Produits */
 
