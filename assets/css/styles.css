@@ -2,6 +2,10 @@
 
 /* BEGIN: Global */
 
+html {
+    scroll-behavior: fast;
+  }
+
 body{
     margin: 0;
     padding: 0;
