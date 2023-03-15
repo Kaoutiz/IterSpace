@@ -2,6 +2,10 @@
 
 /* BEGIN: Global */
 
+html {
+    scroll-behavior: fast;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -57,18 +61,6 @@ section{
     background-image: -moz-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
     background-image: -webkit-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
     background-image: -ms-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
-} 
-  
-button{
-    min-width: 200px;
-    height: 40px;
-    border: none;
-    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
 }
 
 h1{
@@ -84,6 +76,10 @@ h2{
     margin-bottom: 20px;
 }
 
+h3{
+    font-size: 65px; 
+}
+
 h4{
     font-weight: 800;
     font-size: 30px;
@@ -93,7 +89,6 @@ h4{
     position: relative;
     text-transform: uppercase;
     text-align: center;
-    font-size: 65px;
     margin-bottom: 60px;
 }
 
