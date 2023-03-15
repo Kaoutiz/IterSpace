@@ -47,15 +47,15 @@
             </div>
             <div class="d-flex justify-content-center align-center text-center">
                 <div class="compteur-box">
-                    <p class="number">958</p>
+                    <p class="number" id="number-voyage">0</p>
                     <p class="title-compteur">Voyages effectués</p>
                 </div>
                 <div class="compteur-box">
-                    <p class="number">1052</p>
+                    <p class="number" id="number-client">0</p>
                     <p class="title-compteur">Clients satisfaits</p>
                 </div>
                 <div class="compteur-box">
-                    <p class="number">4</p>
+                    <p class="number" id="number-fusee">0</p>
                     <p class="title-compteur">Fusées disponibles</p>
                 </div>
             </div>
