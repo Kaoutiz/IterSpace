@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<calendar>
+    <mounth value="fervrier">
+        <day value="1">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="2">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="3">
+            <number>1</number>
+            <price>160</price>
+        </day>
+        <day value="4">
+            <number>2</number>
+            <price>652</price>
+        </day>
+        <day value="5">
+            <number>3</number>
+            <price>1107</price>
+        </day>
+        <day value="6">
+            <number>4</number>
+            <price>179</price>
+        </day>
+        <day value="7">
+            <number>5</number>
+            <price>239</price>
+        </day>
+        <day value="8">
+            <number>6</number>
+            <price>891</price>
+        </day>
+        <day value="9">
+            <number>7</number>
+            <price>959</price>
+        </day>
+        <day value="10">
+            <number>8</number>
+            <price>613</price>
+        </day>
+        <day value="11">
+            <number>9</number>
+            <price>265</price>
+        </day>
+        <day value="12">
+            <number>10</number>
+            <price>541</price>
+        </day>
+        <day value="13">
+            <number>11</number>
+            <price>984</price>
+        </day>
+        <day value="14">
+            <number>12</number>
+            <price>165</price>
+        </day>
+        <day value="15">
+            <number>13</number>
+            <price>980</price>
+        </day>
+        <day value="16">
+            <number>14</number>
+            <price>426</price>
+        </day>
+        <day value="17">
+            <number>15</number>
+            <price>1085</price>
+        </day>
+        <day value="18">
+            <number>16</number>
+            <price>984</price>
+        </day>
+        <day value="19">
+            <number>17</number>
+            <price>655</price>
+        </day>
+        <day value="20">
+            <number>18</number>
+            <price>625</price>
+        </day>
+        <day value="21">
+            <number>19</number>
+            <price>165</price>
+        </day>
+        <day value="22">
+            <number>20</number>
+            <price>984</price>
+        </day>
+        <day value="23">
+            <number>21</number>
+            <price>569</price>
+        </day>
+        <day value="24">
+            <number>22</number>
+            <price>554</price>
+        </day>
+        <day value="25">
+            <number>23</number>
+            <price>758</price>
+        </day>
+        <day value="26">
+            <number>24</number>
+            <price>398</price>
+        </day>
+        <day value="27">
+            <number>25</number>
+            <price>351</price>
+        </day>
+        <day value="28">
+            <number>26</number>
+            <price>125</price>
+        </day>
+        <day value="29">
+            <number>27</number>
+            <price>458</price>
+        </day>
+        <day value="30">
+            <number>28</number>
+            <price>569</price>
+        </day>
+        <day value="31">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="32">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="33">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="34">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="35">
+            <number></number>
+            <price></price>
+        </day>
+    </mounth>
+    <mounth value="mars">
+        <day value="1">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="2">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="3">
+            <number>1</number>
+            <price>549</price>
+        </day>
+        <day value="4">
+            <number>2</number>
+            <price>745</price>
+        </day>
+        <day value="5">
+            <number>3</number>
+            <price>903</price>
+        </day>
+        <day value="6">
+            <number>4</number>
+            <price>365</price>
+        </day>
+        <day value="7">
+            <number>5</number>
+            <price>241</price>
+        </day>
+        <day value="8">
+            <number>6</number>
+            <price>658</price>
+        </day>
+        <day value="9">
+            <number>7</number>
+            <price>458</price>
+        </day>
+        <day value="10">
+            <number>8</number>
+            <price>784</price>
+        </day>
+        <day value="11">
+            <number>9</number>
+            <price>265</price>
+        </day>
+        <day value="12">
+            <number>10</number>
+            <price>154</price>
+        </day>
+        <day value="13">
+            <number>11</number>
+            <price>789</price>
+        </day>
+        <day value="14">
+            <number>12</number>
+            <price>265</price>
+        </day>
+        <day value="15">
+            <number>13</number>
+            <price>147</price>
+        </day>
+        <day value="16">
+            <number>14</number>
+            <price>198</price>
+        </day>
+        <day value="17">
+            <number>15</number>
+            <price>478</price>
+        </day>
+        <day value="18">
+            <number>16</number>
+            <price>105</price>
+        </day>
+        <day value="19">
+            <number>17</number>
+            <price>347</price>
+        </day>
+        <day value="20">
+            <number>18</number>
+            <price>529</price>
+        </day>
+        <day value="21">
+            <number>19</number>
+            <price>647</price>
+        </day>
+        <day value="22">
+            <number>20</number>
+            <price>269</price>
+        </day>
+        <day value="23">
+            <number>21</number>
+            <price>426</price>
+        </day>
+        <day value="24">
+            <number>22</number>
+            <price>684</price>
+        </day>
+        <day value="25">
+            <number>23</number>
+            <price>789</price>
+        </day>
+        <day value="26">
+            <number>24</number>
+            <price>487</price>
+        </day>
+        <day value="27">
+            <number>25</number>
+            <price>1502</price>
+        </day>
+        <day value="28">
+            <number>26</number>
+            <price>369</price>
+        </day>
+        <day value="29">
+            <number>27</number>
+            <price>206</price>
+        </day>
+        <day value="30">
+            <number>28</number>
+            <price>964</price>
+        </day>
+        <day value="31">
+            <number>29</number>
+            <price>458</price>
+        </day>
+        <day value="32">
+            <number>30</number>
+            <price>258</price>
+        </day>
+        <day value="33">
+            <number>31</number>
+            <price>158</price>
+        </day>
+        <day value="34">
+            <number></number>
+            <price></price>
+        </day>
+        <day value="35">
+            <number></number>
+            <price></price>
+        </day>
+    </mounth>
+</calendar>

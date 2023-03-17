@@ -14,6 +14,7 @@
     <!-- END: LIBRAIRIES -->
 
     <!-- BEGIN: STYLES -->
+    <link rel="stylesheet" href="assets/css/range.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- END: STYLES -->
 </head>
@@ -42,7 +43,7 @@
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
                     <h2>Un chemin vers l'espace</h2>
-                    <button class="rounded-btn">Réservez maintenant</button>
+                    <a href="#reservation"><button class="rounded-btn">Réservez maintenant</button></a>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-center text-center">
@@ -141,14 +142,82 @@
     </section>
     <section id="reservation">
         <div class="container">
-            <!-- Votre code ici... -->
+            <div class="calendar-wrapper d-flex justify-content-around">
+                <div id="filter" class="col-12 col-sm-12 col-md-3 col-xl-3">
+                    <div id="sejour" class="d-flex flex-column">
+                        <label for="sieges" class="mb-2">Nombre de sièges</label>
+                        <select name="sieges" id="sieges" class="form-select mb-3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <label for="fusee" class="mb-2">Fusée</label>
+                        <select name="fusee" id="fusee" class="form-select mb-3">
+                            <option value="Falcon 9" select>Falcon 9</option>
+                            <option value="Ariane 5">Ariane 5</option>
+                            <option value="Vega">Vega</option>
+                        </select>
+                    </div>
+                    <div id="budget">
+                    <div class="range">
+                        <label class="mb-2">Budget en K€</label>
+                        <div class="range-label mb-3 d-flex justify-content-between">
+                            <label>0K €</label>
+                            <label>+900K €</label>
+                        </div>
+                        <div class="range-slider">
+                            <span class="range-selected"></span>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="min" min="0" max="1000" value="0" step="200">
+                            <input type="range" class="max" min="0" max="1000" value="1000" step="200" >
+                        </div>
+                        <div class="range-price d-none">      
+                            <label for="min">Min</label>
+                            <input type="number" name="min" value="0" hidden>      
+                            <label for="max">Max</label>
+                            <input type="number" name="max" value="1000" hidden>      
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+                <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9">
+                    <div id="calendar-header">
+                        <div class="d-flex align-items-start">
+                            <p>Les prix sont en milliers d'euros</p> 
+                        </div>
+                        <div id="mounth-title" class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="border border-dark rounded-circle align-items-center">
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <h4>Février 2023</h4>
+                            <h4 class="mounth-next">Mars 2023</h4>
+                            <div class="border border-dark rounded-circle align-items-center">
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                        </div>  
+                    </div>
+                    <div id="calendar-body" class="d-flex justify-content-between">
+                        <!-- Le HTML ici est généré depuis calendar.js grâce au XML -->
+                    </div>
+                    <div id="estimation" class="d-none">
+                        <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span>K €</h2>  
+                        <a href="#"><button id="next-calendar-btn" class="btn btn-primary rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button></a>
+                    </div>
+                    <div id="info_choice" class="d-none"> 
+                        <h2 class="fusee_value" id="fusee_value"></h2>  
+                        <p class="choice"><span id="sieges_value"></span></p> 
+                    </div>
+                </div>  
+            </div>
         </div>
     </section>
     <section id="produits">
         <div class="container">
             <div class="container">
                 <div class="section-title">
-                    <h3>Testimonials</h3>
+                    <h3>Produits</h3>
                 </div>
             </div>
         </div>
@@ -159,7 +228,6 @@
                 <div class="red-line"></div>
                 <h3>Testimonials</h3>
             </div>
-
             <div class="my-5 py-5 text-black">
                 <div class="row d-flex justify-content-center">
                     <div id="avis-card" class="col-md-12">
@@ -270,8 +338,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         </div>
     </section>
     <?php include 'assets/templates/footer.php'; ?>
