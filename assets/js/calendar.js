@@ -55,9 +55,10 @@ export function calendar(){
             
                 // créer une div pour le jour
                 const dayDiv = document.createElement('div');
-                dayDiv.setAttribute('class', 'days');
+                
+                dayDiv.setAttribute('class', 'days d-none');
                 if (!number && !price) {
-                dayDiv.style.opacity = '0'; // cacher la div si les données sont vides
+                    dayDiv.setAttribute("class", "days noday") // cacher la div si les données sont vides
                 }
             
                 const dayNumberP = document.createElement('p');
@@ -106,6 +107,11 @@ export function calendar(){
 }
 
     /* FIN: Récupération du contenue XML */
+
+
+    /* DEBUT: Lancement du script calendar */
+
+    setTimeout(() => {
 
     /* DEBUT: Durée */
 
@@ -157,7 +163,8 @@ export function calendar(){
     let calendar = document.getElementById("calendar-body");
     let priceDay = calendar.getElementsByClassName("price_value");
 
-    setTimeout(() => {
+    // On définit les couleurs des jours en fonction de leurs prix
+    
         for(let i = 0; i < priceDay.length; i++){
     
             switch (true){
@@ -191,8 +198,8 @@ export function calendar(){
                 break;
             }
             
-            }
-    }, "100")
+        }
+    
 
     rangeInput.forEach((input) => {
     input.addEventListener("input", (e) => {
@@ -349,30 +356,38 @@ export function calendar(){
 
     days[i].addEventListener("click", function(){
 
-        estimation.classList.remove("d-none");
-        priceValue.textContent = days[i].children[1].children[0].textContent;
-        infoChoice.classList.remove("d-none");
-        fuseeValue.textContent = "Fusée choisis: " + fuseeSelected.value;
-
-        if(siegeNbr.value > 1){
-            siegeNbrValue.textContent = "Nombre de siège: " + siegeNbr.value + " sièges";
-        }else{
-            siegeNbrValue.textContent = "Nombre de siège: " + siegeNbr.value + " siège";
+        if(!days[i].classList.contains('noday')){
+            estimation.classList.remove("d-none");
+            priceValue.textContent = days[i].children[1].children[0].textContent;
+            infoChoice.classList.remove("d-none");
+            fuseeValue.textContent = "Fusée choisis: " + fuseeSelected.value;
+    
+            if(siegeNbr.value > 1){
+                siegeNbrValue.textContent = "Nombre de siège: " + siegeNbr.value + " sièges";
+            }else{
+                siegeNbrValue.textContent = "Nombre de siège: " + siegeNbr.value + " siège";
+            }
+    
+            // On remet à zéro les focus sur les jours
+            for(let j =0; j < days.length; j++){
+            days[j].style.outline = "none";
+            days[j].style.outlineOffset = "0";
+            }
+    
+            // On attribue un focus sur le jour concerner
+            days[i].style.outline = "1px solid #0046e4";
+            days[i].style.outlineOffset = "2px";
         }
 
-        // On remet à zéro les focus sur les jours
-        for(let j =0; j < days.length; j++){
-        days[j].style.outline = "none";
-        days[j].style.outlineOffset = "0";
-        }
 
-        // On attribue un focus sur le jour concerner
-        days[i].style.outline = "1px solid #0046e4";
-        days[i].style.outlineOffset = "2px";
         
     });
 
     }
 
     /* FIN: Price estimation */
+
+    }, "100")
+
+    /* FIN: Lancement du script calendar */
 }

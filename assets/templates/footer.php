@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
-<footer>
+<footer id="footer">
     <div class="container row">
         <div class="footer-link col-3">
             <h3>Confidentialité</h3>
