@@ -250,6 +250,11 @@ video#video_principal{
     cursor: auto !important;
 }
 
+#reservation .price_value{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 #reservation p, #reservation label, #reservation i, #reservation h4, #reservation h2{
     color: #000000;
 }
