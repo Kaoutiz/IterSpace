@@ -168,8 +168,8 @@
                     <div class="range">
                         <label class="mb-2">Budget en K€</label>
                         <div class="range-label mb-3 d-flex justify-content-between">
-                            <label>0K €</label>
-                            <label>+900K €</label>
+                            <label>100K €</label>
+                            <label>+1 000K €</label>
                         </div>
                         <div class="range-slider">
                             <span class="range-selected"></span>
@@ -190,7 +190,7 @@
                 <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay= "400">
                     <div id="calendar-header">
                         <div class="d-flex align-items-start">
-                            <p>Les prix sont en milliers d'euros</p> 
+                            <p class="d-flex align-items-center"><i class='bx bx-dollar-circle'></i><span class="info-price">Les prix sont en milliers d'euros</span></p> 
                         </div>
                         <div id="mounth-title" class="d-flex justify-content-between align-items-center mt-2">
                             <div class="border border-dark rounded-circle align-items-center">
@@ -449,7 +449,6 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 <!-- END: LIBRAIRIES SCRIPTS -->
 
 <!-- BEGIN: SCRIPTS -->
