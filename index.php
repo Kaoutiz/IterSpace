@@ -176,32 +176,104 @@
                         </div>
                     </div>
                 </div>
-                <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay="400">
-                    <div id="calendar-header">
-                        <div class="d-flex align-items-start">
-                            <p class="d-flex align-items-center"><i class='bx bx-dollar-circle'></i><span class="info-price">Les prix sont en milliers d'euros</span></p>
-                        </div>
-                        <div id="mounth-title" class="d-flex justify-content-between align-items-center mt-2">
-                            <div class="border border-dark rounded-circle align-items-center">
-                                <i class='bx bx-chevron-left'></i>
+                <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay= "400">
+                    <div id="calendar-step1">
+                        <div id="calendar-header">
+                            <div class="d-flex align-items-start">
+                                <p class="d-flex align-items-center"><i class='bx bx-dollar-circle'></i><span class="info-price">Les prix sont en milliers d'euros</span></p> 
                             </div>
-                            <h4>Février 2023</h4>
-                            <h4 class="mounth-next">Mars 2023</h4>
-                            <div class="border border-dark rounded-circle align-items-center">
-                                <i class='bx bx-chevron-right'></i>
+                            <div id="mounth-title" class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="border border-dark rounded-circle align-items-center">
+                                    <i class='bx bx-chevron-left'></i>
+                                </div>
+                                <h4>Février 2023</h4>
+                                <h4 class="mounth-next">Mars 2023</h4>
+                                <div class="border border-dark rounded-circle align-items-center">
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                            </div>  
+                        </div>
+                        <div id="calendar-body" class="d-flex justify-content-between">
+                            <!-- Le HTML ici est généré depuis calendar.js grâce au XML -->
+                        </div>
+                    </div>
+                    <div id="calendar-step2" class="d-none">
+                        <h4 class="d-flex align-items-center"><i class='bx bxs-user-check'></i><span style="margin-left:5px">Coordonnées</span></h4>
+                        <div class="row mb-1">
+                            <div class="col-6">
+                                <label for="nom">Nom:</label>
+                                <input type="text" name="nom" id="nom" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="prenom">Prénom:</label>
+                                <input type="text" name="prenom" id="prenom" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-6">
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="tel">Téléphone:</label>
+                                <input type="text" name="tel" id="tel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <label for="adresse">Adresse:</label>
+                                <input type="text" name="adresse" id="adresse" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-6">
+                                <label for="cp">Code postal:</label>
+                                <input type="text" name="cp" id="cp" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="ville">Ville:</label>
+                                <input type="text" name="ville" id="ville" class="form-control">
                             </div>
                         </div>
                     </div>
-                    <div id="calendar-body" class="d-flex justify-content-between">
-                        <!-- Le HTML ici est généré depuis calendar.js grâce au XML -->
+                    <div id="calendar-step3" class="d-none">
+                        <h4 class="d-flex align-items-center"><i class='bx bx-credit-card-alt' ></i><span style="margin-left:5px">Paiement</span></h4>
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <img src="assets/img/carte_bancaire.png" alt="Carte bancaire" width="200"> 
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <label for="nom_cb">Nom sur la carte:</label>
+                                <input type="text" name="nom_cb" id="nom_cb" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-12">
+                                <label for="cb_num">N° de carte:</label>
+                                <input type="text" name="cb_num" id="cb_num" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col-8">
+                                <label for="date_expiration">Date d'expiration:</label>
+                                <input type="text" name="date_expiration" id="date_expiration" class="form-control">
+                            </div>
+                            <div class="col-4">
+                                <label for="crypto">Cryptogramme visuel:</label>
+                                <input type="text" name="crypto" id="crypto" class="form-control">
+                            </div>
+                        </div>
                     </div>
-                    <div id="estimation" class="d-none">
-                        <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>
-                        <a href="#"><button id="next-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button></a>
+                    <div id="estimation" class="d-none d-flex align-items-center">
+                        <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>  
+                        <button id="previous-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center d-none"><i class='bx bx-chevron-left'></i> <span>Précendent</span></button>
+                        <button id="next-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button>
                     </div>
-                    <div id="info_choice" class="d-none">
-                        <h2 class="fusee_value" id="fusee_value"></h2>
-                        <p class="choice"><span id="sieges_value"></span></p>
+                    <div id="info_choice" class="d-none flex-column"> 
+                        <h2 class="fusee_value" id="fusee_value"></h2>  
+                        <p class="choice"><span id="sieges_value"></span></p> 
                     </div>
                 </div>
             </div>
@@ -431,7 +503,47 @@
             </div>
         </div>
     </section>
-    <?php include 'assets/templates/footer.php'; ?>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <footer id="footer">
+        <div class="container row">
+            <div class="footer-link col-3">
+                <h3>Confidentialité</h3>
+                <a href="#" target="_self" title="">Politique de Confidentialité</a>
+                <a href="#" target="_self" title="">Mentions légales</a>
+                <a href="#" target="_self" title="">Mes données personnelles</a>
+            </div>
+            <div class="footer-link col-3">
+                <h3>Nous suivre</h3>
+                <a href="#" target="_self" title="">Facebook</a>
+                <a href="#" target="_self" title="">Twitter</a>
+                <a href="#" target="_self" title="">Instagram</a>
+                <a href="#" target="_self" title="">TikTok</a>
+            </div>
+            <div class="footer-link col-3">
+                <h3>Contact</h3>
+                <a href="#" target="_self" title="">Nous contacter</a>
+                <a href="=mailto:#" target="_self" title="">contact@iterspace.fr</a>
+                <a href="tel:#" target="_self" title="">07.07.07.07.07</a>
+            </div>
+            <div class="footer-link col-3">
+                <h3>Restez informés</h3>
+                <form>
+                    <label for="newsletter">Recevez nos offres spéciales et réductions</label>
+                    <input type="text" id="newsletter" placeholder="Votre adresse email">
+                    <button class="newsletter-btn">Abonnez-vous</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div id="partenaires">
+                <h3>Nos partenaires</h3>
+                <div id="link-partenaires">
+                    <a href="https://www.spacefox.shop/fr/" target="_blank" title="Site de SpaceFox"><img src="../assets/img/space-fox-logo.svg" alt="Logo de SpaceFox" width="64" height="64"></a>
+                    <a href="https://www.spacex.com" target="_blank" title="Site de SpaceX"><img id="spacex-logo" src="../assets/img/SpaceX-Logo.svg" alt="Logo de Space X" width="150" height="20"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <!-- BEGIN: LIBRAIRIES SCRIPTS -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

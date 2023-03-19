@@ -1,7 +1,7 @@
 /* BEGIN: Header */
 header {
     height: 60vh;
-    background-image: url("/iterspace/assets/img/contact_header.jpg");
+    background-image: url("../img/contact_header.jpg");
 }
 nav{
     width: 100%;

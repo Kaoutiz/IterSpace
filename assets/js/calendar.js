@@ -385,6 +385,67 @@ export function calendar(){
 
     /* FIN: Price estimation */
 
+    /* DEBUT: Système de réservation */
+
+    let btnNext = document.getElementById("next-calendar-btn");
+    let btnPrevious = document.getElementById("previous-calendar-btn");
+    let step = 1;
+    let step1 = document.getElementById("calendar-step1");
+    let step2 = document.getElementById("calendar-step2");
+    let step3 = document.getElementById("calendar-step3");
+
+    btnNext.addEventListener("click", function(){
+
+        if(step === 1){
+            step1.classList.add("d-none");
+            step2.classList.remove("d-none");
+            step3.classList.add("d-none");
+            btnPrevious.classList.remove("d-none");
+            document.getElementsByClassName("price_estimation")[0].style.display = "none";
+            document.getElementById("info_choice").style.display = "none";
+            document.getElementById("estimation").style.marginTop = "20px"
+            btnNext.children[0].textContent = "Continuer"
+            step++;
+        }else if(step === 2){
+            step1.classList.add("d-none");
+            step2.classList.add("d-none");
+            step3.classList.remove("d-none");
+            btnPrevious.classList.remove("d-none");
+            document.getElementsByClassName("price_estimation")[0].style.display = "none";
+            document.getElementById("info_choice").style.display = "none";
+            document.getElementById("estimation").style.marginTop = "20px"
+            btnNext.children[0].textContent = "Payer"
+            step++;
+        }
+        
+    });
+
+    btnPrevious.addEventListener("click", function(){
+        if(step === 2){
+            step1.classList.remove("d-none");
+            step2.classList.add("d-none");
+            step3.classList.add("d-none");
+            btnPrevious.classList.add("d-none");
+            document.getElementsByClassName("price_estimation")[0].style.display = "flex";
+            document.getElementById("info_choice").style.display = "flex";
+            document.getElementById("estimation").style.marginTop = "0"
+            btnNext.children[0].textContent = "Continuer"
+            step--;
+        }else if(step === 3){
+            step1.classList.add("d-none");
+            step2.classList.remove("d-none");
+            step3.classList.add("d-none");
+            btnPrevious.classList.remove("d-none");
+            document.getElementsByClassName("price_estimation")[0].style.display = "none";
+            document.getElementById("info_choice").style.display = "none";
+            document.getElementById("estimation").style.marginTop = "20px";
+            btnNext.children[0].textContent = "Continuer"
+            step--;
+        }
+    });
+
+    /* FIN: Système de réservation */
+
     }, "100")
 
     /* FIN: Lancement du script calendar */
