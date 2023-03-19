@@ -32,11 +32,11 @@
                 <div class="row">
                     <div class="col-md-6">
                         <label for="nom">Nom<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="nom" name="nom" required>
+                        <input type="text" class="form-control mb-2" id="nom" name="nom" required>
                     </div>
                     <div class="col-md-6">
                         <label for="prenom">Prénom<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="prenom" name="prenom" required>
+                        <input type="text" class="form-control mb-2" id="prenom" name="prenom" required>
                     </div>
                 </div>
                 <div class="row">
@@ -46,13 +46,13 @@
                     </div>
                     <div class="col-md-6">
                         <label for="telephone">Téléphone<span class="text-danger">*</span></label>
-                        <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                        <input type="tel" class="form-control mb-2" id="telephone" name="telephone" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <label for="message">Message<span class="text-danger">*</span></label>
-                        <textarea class="form-control" rows="5" id="message" name="message" required></textarea>
+                        <textarea class="form-control mb-2" rows="5" id="message" name="message" required></textarea>
                     </div>
                 </div>
                 <div class="row">
