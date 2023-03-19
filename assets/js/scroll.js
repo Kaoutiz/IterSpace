@@ -150,29 +150,27 @@ export function Scroll(){
 
       const elements = document.getElementsByClassName("days");
 
-function zoomIn(index) {
-  let scale = 0;
-  function step(timestamp) {
-    if (!start) start = timestamp;
-    const progress = timestamp - start;
-    scale = progress / 500;
-    elements[index].style.transform = `scale(${scale})`;
-    if (progress < 500) {
-      window.requestAnimationFrame(step);
-    }
-  }
-  let start;
-  window.requestAnimationFrame(step);
-}
+      function zoomIn(index) {
+        let scale = 0;
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          scale = progress / 500;
+          elements[index].style.transform = `scale(${scale})`;
+          if (progress < 500) {
+            window.requestAnimationFrame(step);
+          }
+        }
+        let start;
+        window.requestAnimationFrame(step);
+      }
 
-for (let i = 0; i < elements.length; i++) {
-  setTimeout(() => {
-    elements[i].classList.remove("d-none");
-    zoomIn(i);
-  }, i * 10); // Ajoute un délai de 500ms entre chaque animation
-}
-
-      
+      for (let i = 0; i < elements.length; i++) {
+        setTimeout(() => {
+          elements[i].classList.remove("d-none");
+          zoomIn(i);
+        }, i * 10); // Ajoute un délai de 10ms entre chaque animation
+      }
 
     }, "1000")
   }
