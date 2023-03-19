@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <calendar>
-    <mounth value="fervrier">
+    <mounth value="February">
         <day value="1">
             <number></number>
             <price></price>
@@ -142,7 +142,7 @@
             <price></price>
         </day>
     </mounth>
-    <mounth value="mars">
+    <mounth value="March">
         <day value="1">
             <number></number>
             <price></price>

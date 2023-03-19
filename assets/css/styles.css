@@ -512,3 +512,98 @@ section:hover .title:after{
 }
 
 /* END: Global */
+
+
+/* BEGIN: RESPONSIVE */
+
+@media screen and (max-width: 930px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .nav-left{
+        display: none;
+    }
+
+    nav{
+        justify-content: end !important;
+    }
+
+    .second_card{
+        display: none;
+    }
+
+    .third_card{
+        display: none;
+    }
+
+    .calendar-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mounth-next{
+        display: none;
+    }
+
+    #mounth-right{
+        display: none;
+    }
+
+    #calendar-body{
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    section{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .section-title h3{
+        margin-bottom: 10px;
+    }
+
+    .title::after{
+        height: 10px;
+    }
+
+    #reservation #filter #sejour, #reservation #filter #budget{
+        padding: 10px !important;
+    }
+
+    #reservation #calendar #calendar-body{
+        height: 280px !important;
+    }
+
+    .price_estimation{
+        display: none;
+    }
+
+    #info_choice{
+        display: none !important;
+    }    
+
+    #calendar{
+        margin-top: 10px;
+    }
+
+    #estimation{
+        justify-content: space-between !important;
+    }
+
+    #reservation #calendar{
+        min-height: 0 !important;
+    }
+}
+
+/* END: RESPONSIVE */

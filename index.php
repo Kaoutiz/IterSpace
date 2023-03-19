@@ -98,7 +98,7 @@
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card h-100" data-aos="slide-right">
+                    <div class="card h-100 first_card" data-aos="slide-right">
                         <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-1" />
                         <div class="card-body">
                             <h5 class="card-title text-dark">Title</h5>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" data-aos="slide-up">
+                    <div class="card h-100 second_card" data-aos="slide-up">
                         <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-2" />
                         <div class="card-body">
                             <h5 class="card-title text-dark">Title</h5>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" data-aos="slide-left">
+                    <div class="card h-100 third_card" data-aos="slide-left">
                         <img src="assets/img/astronaute.jpg" class="card-img-top" alt="actualites-3" />
                         <div class="card-body">
                             <h5 class="card-title text-dark">Title</h5>
@@ -267,17 +267,17 @@
                             </div>
                         </div>
                         <div class="row mb-1">
-                            <div class="col-8">
+                            <div class="col-7">
                                 <label for="date_expiration">Date d'expiration:</label>
                                 <input type="text" name="date_expiration" id="date_expiration" class="form-control">
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <label for="crypto">Cryptogramme visuel:</label>
                                 <input type="text" name="crypto" id="crypto" class="form-control">
                             </div>
                         </div>
                     </div>
-                    <div id="estimation" class="d-none d-flex align-items-center">
+                    <div id="estimation" class="d-none d-flex">
                         <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>  
                         <button id="previous-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center d-none"><i class='bx bx-chevron-left'></i> <span>Précendent</span></button>
                         <button id="next-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button>
