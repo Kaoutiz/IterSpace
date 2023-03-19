@@ -22,7 +22,7 @@
 
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
-
+    <a href="#header"><div id="fusee_back"></div></a>
     <section id="contact">
         <div class="container">
             <div class="section-title">

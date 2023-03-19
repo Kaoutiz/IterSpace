@@ -21,7 +21,7 @@
 
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
-    
+    <a href="#header"><div id="fusee_back"></div></a>
     <section id="produits" style="height: auto">
         <div class="container">
             <div class="section-title" data-aos="zoom-in">

@@ -117,6 +117,37 @@ section:hover .title:after{
     z-index: 1;
 }
 
+#fusee_back{
+    background: url("../img/fusee_back.svg") no-repeat;
+    width: 120px;
+    height: 200px;
+    z-index: 10;
+    position: fixed;
+    top: 70%;
+    right: 100px;
+    cursor: pointer;
+}
+
+#fusee_back:hover{
+    background: url("../img/fusee_back_fire.svg") no-repeat;
+    animation-name: shake;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    10% { transform: translate(-2px, 0) rotate(-1deg); }
+    20% { transform: translate(1px, 0) rotate(1deg); }
+    30% { transform: translate(-1px, 0) rotate(-1deg); }
+    40% { transform: translate(1px, 0) rotate(1deg); }
+    50% { transform: translate(-1px, 0) rotate(-1deg); }
+    60% { transform: translate(1px, 0) rotate(1deg); }
+    70% { transform: translate(-1px, 0) rotate(-1deg); }
+    80% { transform: translate(1px, 0) rotate(1deg); }
+    90% { transform: translate(-2px, 0) rotate(-1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
 /* END: Global */
 
 /* BEGIN: Header */
@@ -686,6 +717,11 @@ section:hover .title:after{
 
     .zone-compteur{
         margin-top: 100px;
+    }
+
+    #fusee_back{
+        top: 60%;
+        right: 50px;
     }
 }
 

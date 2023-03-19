@@ -22,54 +22,43 @@
 
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
-
+    <a href="#header"><div id="fusee_back"></div></a>
     <section id="connexion">
         <div class="container">
             <div class="section-title">
                 <h3 class="title">Inscription</h3>
             </div>
-
-            <?php
-            /* On vérifie que le formulaire est bein reçu */
-            if (($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST) && count($_POST)) {
-                /* On pourrait imaginer un include pour un fichier lié à une BDD qui
-                permettrait de gérer le système de connexion */
-            } else { ?>
-
-                <form id="contact-form" method="post" action="inscription.php" role="form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="email"><span style="margin-right: 5px">Adresse Email</span><span class="text-danger">*</span></label>
-                            <input type="email" class="form-control mb-2" id="email" name="email" required>
-                        </div>
+            <form id="contact-form" method="post" action="inscription.php" role="form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="email"><span style="margin-right: 5px">Adresse Email</span><span class="text-danger">*</span></label>
+                        <input type="email" class="form-control mb-2" id="email" name="email" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="password"><span style="margin-right: 5px">Mot de passe</span><span class="text-danger">*</span></label>
-                            <input type="password" class="form-control mb-2" id="password" name="password" required>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="password"><span style="margin-right: 5px">Mot de passe</span><span class="text-danger">*</span></label>
+                        <input type="password" class="form-control mb-2" id="password" name="password" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="password_repeat"><span style="margin-right: 5px">Répétez le mot de passe</span><span class="text-danger">*</span></label>
-                            <input type="password" class="form-control mb-2" id="password_repeat" name="password_repeat" required>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="password_repeat"><span style="margin-right: 5px">Répétez le mot de passe</span><span class="text-danger">*</span></label>
+                        <input type="password" class="form-control mb-2" id="password_repeat" name="password_repeat" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p><span class="text-danger">*</span> Champs obligatoires</p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><span class="text-danger">*</span> Champs obligatoires</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button type="submit" class="rounded-btn" id="envoyer">S'inscrire</button>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="rounded-btn" id="envoyer">S'inscrire</button>
                     </div>
-                    <a href="connexion.php"><p class="mt-3 text-center"><u>Déjà un compte ? Se connecter</u></p></a>
-                </form>
-            <?php
-            }
-            ?>
+                </div>
+                <a href="connexion.php"><p class="mt-3 text-center"><u>Déjà un compte ? Se connecter</u></p></a>
+            </form>
         </div>
     </section>
 
