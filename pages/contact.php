@@ -8,15 +8,15 @@
     <title>Accueil</title>
 
     <!-- BEGIN: LIBRAIRIES -->
-    <link rel="stylesheet" href="/iterspace/assets/css/boxicons.css">
+    <link rel="stylesheet" href="../assets/css/boxicons.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- END: LIBRAIRIES -->
 
     <!-- BEGIN: STYLES -->
-    <link rel="stylesheet" href="/iterspace/assets/css/range.css">
-    <link rel="stylesheet" href="/iterspace/assets/css/styles.css">
-    <link rel="stylesheet" href="/iterspace/assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/range.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <!-- END: STYLES -->
 </head>
 
