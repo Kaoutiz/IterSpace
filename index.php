@@ -30,7 +30,18 @@
             <source src="assets/videos/header.mp4" type="video/mp4">
         </video>
         <div id="overlay">
-            <?php include 'assets/templates/menu.php'; ?>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="pages/qui-sommes-nous.php">Qui sommes-nous ?</a></li>
+                    <li><a href="pages/catalogue.php">Catalogue</a></li>
+                    <li><a href="pages/contact.php">Contact</a></li>
+                </ul>
+                <ul class="nav-right d-flex align-center">
+                    <li><a href="#">Se connecter</a></li>
+                    <i class='bx bx-menu'></i>
+                </ul>
+            </nav>
             <div id="title-zone">
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
@@ -281,8 +292,8 @@
     </section>
     <section id="produits">
         <div class="container">
-            <div class="section-title">
-                <h3 class="title">Nos produits</h3>
+            <div class="section-title" data-aos="zoom-in">
+                <h3>Nos produits</h3>
             </div>
             <div class="d-flex justify-content-between mb-5 product-content">
                 <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
