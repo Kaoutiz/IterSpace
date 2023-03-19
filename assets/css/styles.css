@@ -2,6 +2,10 @@
 
 /* BEGIN: Global */
 
+html {
+    scroll-behavior: fast;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -41,7 +45,8 @@ section{
 }
 
 .rounded-btn{
-    min-width: 200px;
+    min-width: 130px;
+    justify-content: center;
     height: 40px;
     border: none;
     border-radius: 50px;
@@ -51,24 +56,14 @@ section{
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .rounded-btn:hover{
     background-image: -moz-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
     background-image: -webkit-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
     background-image: -ms-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
-} 
-  
-button{
-    min-width: 200px;
-    height: 40px;
-    border: none;
-    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
 }
 
 h1{
@@ -84,6 +79,10 @@ h2{
     margin-bottom: 20px;
 }
 
+h3{
+    font-size: 65px; 
+}
+
 h4{
     font-weight: 800;
     font-size: 30px;
@@ -93,7 +92,6 @@ h4{
     position: relative;
     text-transform: uppercase;
     text-align: center;
-    font-size: 65px;
     margin-bottom: 60px;
 }
 
@@ -138,14 +136,14 @@ nav ul .bx{
 }
 
 #overlay{
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
-video{
+video#video_principal{
     position: absolute;
     height: 100vh;
     object-fit: cover;
@@ -198,6 +196,19 @@ video{
 
 .spaceship {
     width: 200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 /* END: Presentation */
@@ -219,14 +230,221 @@ video{
 
 /* END: Actus */
 
+/* BEGIN: Réservation */
+
 #reservation{
-    background-color: yellow;
+    background-color: #000113;
 }
+
+#reservation .noday{
+    opacity: 0;
+    cursor: auto !important;
+}
+
+#reservation p, #reservation label, #reservation i, #reservation h4, #reservation h2{
+    color: #000000;
+}
+
+#next-calendar-btn i{
+    color: #fff !important;
+    font-weight: 200;
+}
+
+#reservation .icon-calendar{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #ffffff;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#reservation .icon-calendar i{
+    background: rgb(175,81,163);
+    background: linear-gradient(90deg, rgba(175,81,163,1) 0%, rgba(128,67,161,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    padding: 5px;
+    line-height: 30px;
+}
+
+#reservation .icon-wrapper p{
+    width: 250px;
+    height: 40px;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+#reservation #calendar{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 500px;
+    position: relative;
+}
+
+#reservation #filter{
+    margin-right: 10px;
+}
+
+#reservation #filter label{
+    font-weight: bold;
+}
+
+#reservation #filter #budget{
+    margin-top: 10px;
+}
+
+#reservation #filter #sejour,
+#reservation #filter #budget
+{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 100px;
+}
+
+#reservation #calendar #calendar-header img{
+    margin-right: 8px;
+    min-width: 32px;
+}
+
+#reservation #calendar #calendar-header #mounth-title i{
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+#reservation #calendar #calendar-body{
+    height: 370px;
+}
+
+#reservation #calendar #calendar-body #mounth-left,
+#reservation #calendar #calendar-body #mounth-right
+{
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+#reservation #calendar #calendar-body .days{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#reservation #calendar #calendar-body .days-title{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(32, 34, 73, 0.5);
+}
+
+#reservation #calendar #calendar-body .days:hover{
+    animation-name: bounce;
+    animation-duration: 0.2s;
+}
+
+@keyframes bounce {
+    0%   {
+        padding: 5px;
+    }
+    50%  {
+        padding-top: 10px;
+    }
+    100% {
+        padding: 5px;
+    }
+  }
+
+#reservation #calendar #calendar-body .days p{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#reservation #calendar #calendar-body .days p.price{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#reservation #calendar #estimation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+#reservation #calendar #estimation .price_estimation{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#reservation #calendar .fusee_value{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#reservation #calendar #next-calendar-btn i{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reservation .info-price{
+    margin-left: 5px;
+}
+
+/* END: Réservation */
 
 /* BEGIN: Produits */
 
 #produits{
-    background-color: pink;
+    background-color: #ffffff;
+}
+
+#produits h3{
+    color: #000000;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: left;
+}
+
+#produits .video-bracelet{
+    width: 200px;
+    height: 200px;
+}
+
+#produits .title-product{
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#produits .price-product{
+    color: #000000;
+    font-weight: 200;
+}
+
+#produits .product-content{
+    min-height: 300px;
 }
 #produits h3{
     z-index: 10;
