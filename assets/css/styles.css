@@ -245,7 +245,7 @@ video#video_principal{
     color: #000000;
 }
 
-#next-calendar-btn i{
+#next-calendar-btn i, #previous-calendar-btn i{
     color: #fff !important;
     font-weight: 200;
 }
@@ -402,7 +402,7 @@ video#video_principal{
     font-weight: bold;
 }
 
-#reservation #calendar #next-calendar-btn i{
+#reservation #calendar #next-calendar-btn i, #reservation #calendar #previous-calendar-btn i{
     font-size: 20px;
     font-weight: bold;
 }
