@@ -515,8 +515,8 @@ export function calendar(){
             if (window.matchMedia("(max-width: 930px)").matches) {
                 
             } else {
-                document.getElementsByClassName("price_estimation")[0].style.display = "block";
-                document.getElementById("info_choice").style.display = "block";
+                document.getElementsByClassName("price_estimation")[0].style.display = "none";
+                document.getElementById("info_choice").style.display = "none";
                 document.getElementById("estimation").style.marginTop = "0"
             }
 

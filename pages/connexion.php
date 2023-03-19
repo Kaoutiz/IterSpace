@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="icon" type="image/png" href="../assets/img/iterspace_logo.png" />
-
     <!-- BEGIN: LIBRAIRIES -->
     <link rel="stylesheet" href="../assets/css/boxicons.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -27,45 +26,33 @@
     <section id="connexion">
         <div class="container">
             <div class="section-title">
-                <h3 class="title">Formulaire de connexion</h3>
+                <h3 class="title">Connexion</h3>
             </div>
-
-            <?php
-            /* On vérifie que le formulaire est bein reçu */
-            if (($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST) && count($_POST)) {
-                /* On pourrait imaginer un include pour un fichierl ié à une BDD qui
-                permettrait de gérer le système de connexion */
-            } else { ?>
-
-                <form id="contact-form" method="post" action="connexion.php" role="form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="identifiant">Identifiant<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control mb-2" id="identifiant" name="identifiant" required>
-                        </div>
+            <form id="contact-form" method="post" action="connexion.php" role="form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="identifiant"><span style="margin-right: 5px">Email</span><span class="text-danger">*</span></label>
+                        <input type="email" class="form-control mb-2" id="email" name="email" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="password">Mot de passe<span class="text-danger">*</span></label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="password" ><span style="margin-right: 5px">Mot de passe</span><span class="text-danger">*</span></label>
+                        <input type="password" class="form-control mb-2" id="password" name="password" required>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p><span class="text-danger">*</span> Champs obligatoires</p>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><span class="text-danger">*</span> Champs obligatoires</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button type="submit" class="rounded-btn" id="envoyer">Se connecter</button>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="rounded-btn" id="envoyer">Se connecter</button>
                     </div>
-                </form>
-
-
-            <?php
-            }
-            ?>
+                </div>
+                <a href="inscription.php"><p class="mt-3 text-center"><u>Pas encore de compte ? S'inscire</u></p></a>
+            </form>
         </div>
     </section>
 
@@ -79,6 +66,7 @@
 <!-- END: LIBRAIRIES SCRIPTS -->
 
 <!-- BEGIN: SCRIPTS -->
-<script type="text/javascript" src="../assets/js/connexion.js"></script>
+<script type="module" src="../assets/js/index.js"></script>
+<!-- BEGIN: SCRIPTS -->
 
 </html>

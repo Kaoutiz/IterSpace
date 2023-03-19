@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
     <link rel="icon" type="image/png" href="../assets/img/iterspace_logo.png" />
-
     <!-- BEGIN: LIBRAIRIES -->
     <link rel="stylesheet" href="../assets/css/boxicons.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -23,12 +22,12 @@
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
     
-    <section id="produits">
+    <section id="produits" style="height: auto">
         <div class="container">
             <div class="section-title" data-aos="zoom-in">
                 <h3>Nos produits</h3>
             </div>
-            <div class="d-flex justify-content-between mb-5 product-content">
+            <div class="d-flex justify-content-between mb-0 mb-sm-0 mb-md-5 mb-xl-5 product-content">
                 <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
@@ -141,6 +140,7 @@
 <!-- END: LIBRAIRIES SCRIPTS -->
 
 <!-- BEGIN: SCRIPTS -->
+<script type="module" src="../assets/js/index.js"></script>
 <!-- BEGIN: SCRIPTS -->
 
 </html>
