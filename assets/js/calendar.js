@@ -113,6 +113,8 @@ export function calendar(){
 
     setTimeout(() => {
 
+    let step_reservation = 1;
+
     /* DEBUT: Durée */
 
     let sieges = document.getElementById("sieges");
@@ -132,6 +134,17 @@ export function calendar(){
             days[j].style.outlineOffset = "0";
         }
 
+        step_reservation = 1;
+        step1.classList.remove("d-none");
+        step2.classList.add("d-none");
+        step3.classList.add("d-none");
+        btnPrevious.classList.add("d-none");
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
+        document.getElementById("estimation").style.marginTop = "0"
+        btnNext.children[0].textContent = "Continuer"
+        
+
     });
 
 
@@ -148,6 +161,17 @@ export function calendar(){
             days[j].style.outline = "none";
             days[j].style.outlineOffset = "0";
         }
+
+        step_reservation = 1;
+        step1.classList.remove("d-none");
+        step2.classList.add("d-none");
+        step3.classList.add("d-none");
+        btnPrevious.classList.add("d-none");
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
+        document.getElementById("estimation").style.marginTop = "0"
+        btnNext.children[0].textContent = "Continuer"
+        
 
     });
 
@@ -278,6 +302,17 @@ export function calendar(){
         estimation.classList.add("d-none");
         infoChoice.classList.add("d-none");
 
+        step_reservation = 1;
+        step1.classList.remove("d-none");
+        step2.classList.add("d-none");
+        step3.classList.add("d-none");
+        btnPrevious.classList.add("d-none");
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
+        document.getElementById("estimation").style.marginTop = "0"
+        btnNext.children[0].textContent = "Continuer"
+        
+
         // On remet à zéro les focus sur les jours
         for(let j =0; j < days.length; j++){
             days[j].style.outline = "none";
@@ -389,14 +424,13 @@ export function calendar(){
 
     let btnNext = document.getElementById("next-calendar-btn");
     let btnPrevious = document.getElementById("previous-calendar-btn");
-    let step = 1;
     let step1 = document.getElementById("calendar-step1");
     let step2 = document.getElementById("calendar-step2");
     let step3 = document.getElementById("calendar-step3");
 
     btnNext.addEventListener("click", function(){
 
-        if(step === 1){
+        if(step_reservation === 1){
             step1.classList.add("d-none");
             step2.classList.remove("d-none");
             step3.classList.add("d-none");
@@ -405,8 +439,8 @@ export function calendar(){
             document.getElementById("info_choice").style.display = "none";
             document.getElementById("estimation").style.marginTop = "20px"
             btnNext.children[0].textContent = "Continuer"
-            step++;
-        }else if(step === 2){
+            step_reservation++;
+        }else if(step_reservation === 2){
             step1.classList.add("d-none");
             step2.classList.add("d-none");
             step3.classList.remove("d-none");
@@ -415,23 +449,23 @@ export function calendar(){
             document.getElementById("info_choice").style.display = "none";
             document.getElementById("estimation").style.marginTop = "20px"
             btnNext.children[0].textContent = "Payer"
-            step++;
+            step_reservation++;
         }
         
     });
 
     btnPrevious.addEventListener("click", function(){
-        if(step === 2){
+        if(step_reservation === 2){
             step1.classList.remove("d-none");
             step2.classList.add("d-none");
             step3.classList.add("d-none");
             btnPrevious.classList.add("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "flex";
-            document.getElementById("info_choice").style.display = "flex";
+            document.getElementsByClassName("price_estimation")[0].style.display = "block";
+            document.getElementById("info_choice").style.display = "block";
             document.getElementById("estimation").style.marginTop = "0"
             btnNext.children[0].textContent = "Continuer"
-            step--;
-        }else if(step === 3){
+            step_reservation--;
+        }else if(step_reservation === 3){
             step1.classList.add("d-none");
             step2.classList.remove("d-none");
             step3.classList.add("d-none");
@@ -440,11 +474,44 @@ export function calendar(){
             document.getElementById("info_choice").style.display = "none";
             document.getElementById("estimation").style.marginTop = "20px";
             btnNext.children[0].textContent = "Continuer"
-            step--;
+            step_reservation--;
         }
     });
 
     /* FIN: Système de réservation */
+
+    /* DEBUT: Annimation au clique sur reserver pour afficher les jours du calendrier */
+
+    const elements = document.getElementsByClassName("days");
+
+    document.getElementById("reserver-btn").addEventListener("click", function(){
+
+        setTimeout(() => {
+            function zoomIn(index) {
+                let scale = 0;
+                function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                scale = progress / 500;
+                elements[index].style.transform = `scale(${scale})`;
+                if (progress < 500) {
+                    window.requestAnimationFrame(step);
+                }
+                }
+                let start;
+                window.requestAnimationFrame(step);
+            }
+        
+            for (let i = 0; i < elements.length; i++) {
+                setTimeout(() => {
+                elements[i].classList.remove("d-none");
+                zoomIn(i);
+                }, i * 10); // Ajoute un délai de 10ms entre chaque animation
+            }
+        }, "1000")
+    });
+
+    /* FIN: Annimation au clique sur reserver pour afficher les jours du calendrier */
 
     }, "100")
 

@@ -46,7 +46,7 @@
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
                     <h2>Un chemin vers l'espace</h2>
-                    <a href="#reservation"><button class="rounded-btn">Réservez maintenant</button></a>
+                    <a href="#reservation"><button id="reserver-btn" class="rounded-btn">Réservez maintenant</button></a>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-center text-center">
