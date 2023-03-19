@@ -378,9 +378,7 @@ export function calendar(){
             days[i].style.outline = "1px solid #0046e4";
             days[i].style.outlineOffset = "2px";
         }
-
-
-        
+         
     });
 
     }
