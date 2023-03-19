@@ -45,7 +45,8 @@ section{
 }
 
 .rounded-btn{
-    min-width: 200px;
+    min-width: 130px;
+    justify-content: center;
     height: 40px;
     border: none;
     border-radius: 50px;
@@ -55,6 +56,8 @@ section{
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .rounded-btn:hover{
@@ -133,14 +136,14 @@ nav ul .bx{
 }
 
 #overlay{
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
-video{
+video#video_principal{
     position: absolute;
     height: 100vh;
     object-fit: cover;
@@ -193,6 +196,19 @@ video{
 
 .spaceship {
     width: 200px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 /* END: Presentation */
@@ -218,6 +234,11 @@ video{
 
 #reservation{
     background-color: #000113;
+}
+
+#reservation .noday{
+    opacity: 0;
+    cursor: auto !important;
 }
 
 #reservation p, #reservation label, #reservation i, #reservation h4, #reservation h2{
@@ -391,7 +412,35 @@ video{
 /* BEGIN: Produits */
 
 #produits{
-    background-color: pink;
+    background-color: #ffffff;
+}
+
+#produits h3{
+    color: #000000;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: left;
+}
+
+#produits .video-bracelet{
+    width: 200px;
+    height: 200px;
+}
+
+#produits .title-product{
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#produits .price-product{
+    color: #000000;
+    font-weight: 200;
+}
+
+#produits .product-content{
+    min-height: 300px;
 }
 
 /* END: Produits */
