@@ -17,6 +17,7 @@
     <!-- BEGIN: STYLES -->
     <link rel="stylesheet" href="assets/css/range.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <!-- END: STYLES -->
 </head>
 
@@ -29,17 +30,7 @@
             <source src="assets/videos/header.mp4" type="video/mp4">
         </video>
         <div id="overlay">
-            <nav>
-                <ul class="nav-left">
-                    <li><a href="#">Qui sommes-nous ?</a></li>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav-right d-flex align-center">
-                    <li><a href="#">Se connecter</a></li>
-                    <i class='bx bx-menu'></i>
-                </ul>
-            </nav>
+            <?php include 'assets/templates/menu.php'; ?>
             <div id="title-zone">
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
@@ -66,21 +57,21 @@
     <section id="presentation">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Presentation</h3>
+                <h3 class="title">Presentation</h3>
             </div>
             <div class="row">
                 <div id="presnation-p" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-down">
-                    <h4>Titre</h4>
+                    <h4>Nos valeurs</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        Bienvenue dans le monde passionnant d'Iterspace, une société pionnière dans le domaine du
+                        tourisme spatial. Nous sommes fiers de vous présenter notre offre exclusive de voyages
+                        touristiques dans l'espace, qui vous emmèneront au-delà de l'atmosphère terrestre pour
+                        vivre une expérience unique et inoubliable.
+                        <br>
+                        Notre entreprise est fondée sur une passion
+                        pour l'exploration spatiale et la découverte de nouveaux horizons. Nous sommes convaincus
+                        que l'avenir de l'humanité se trouve dans l'exploration de l'espace, et nous avons donc
+                        créé Iterspace pour permettre à chacun de réaliser ce rêve.
                     </p>
                 </div>
                 <div id="presnation-img" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" data-aos="fade-left">
@@ -92,8 +83,7 @@
     <section id="actus">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Actualités</h3>
+                <h3 class="title">Actualités</h3>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -144,8 +134,7 @@
     <section id="reservation">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Réservations</h3>
+                <h3 class="title">Réservations</h3>
             </div>
             <div class="calendar-wrapper d-flex justify-content-around">
                 <div id="filter" class="col-12 col-sm-12 col-md-3 col-xl-3">
@@ -164,27 +153,27 @@
                             <option value="Vega">Vega</option>
                         </select>
                     </div>
-                    <div id="budget" data-aos="zoom-in-up" data-aos-delay= "200">
-                    <div class="range">
-                        <label class="mb-2">Budget en K€</label>
-                        <div class="range-label mb-3 d-flex justify-content-between">
-                            <label>100K €</label>
-                            <label>+1 000K €</label>
+                    <div id="budget" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="range">
+                            <label class="mb-2">Budget en K€</label>
+                            <div class="range-label mb-3 d-flex justify-content-between">
+                                <label>100K €</label>
+                                <label>+1 000K €</label>
+                            </div>
+                            <div class="range-slider">
+                                <span class="range-selected"></span>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="min" min="0" max="1000" value="0" step="200">
+                                <input type="range" class="max" min="0" max="1000" value="1000" step="200">
+                            </div>
+                            <div class="range-price d-none">
+                                <label for="min">Min</label>
+                                <input type="number" name="min" value="0" hidden>
+                                <label for="max">Max</label>
+                                <input type="number" name="max" value="1000" hidden>
+                            </div>
                         </div>
-                        <div class="range-slider">
-                            <span class="range-selected"></span>
-                        </div>
-                        <div class="range-input">
-                            <input type="range" class="min" min="0" max="1000" value="0" step="200">
-                            <input type="range" class="max" min="0" max="1000" value="1000" step="200" >
-                        </div>
-                        <div class="range-price d-none">      
-                            <label for="min">Min</label>
-                            <input type="number" name="min" value="0" hidden>      
-                            <label for="max">Max</label>
-                            <input type="number" name="max" value="1000" hidden>      
-                        </div>
-                        </div> 
                     </div>
                 </div>
                 <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay= "400">
@@ -286,21 +275,21 @@
                         <h2 class="fusee_value" id="fusee_value"></h2>  
                         <p class="choice"><span id="sieges_value"></span></p> 
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </section>
     <section id="produits">
         <div class="container">
             <div class="section-title">
-                <h3>Nos produits</h3>
+                <h3 class="title">Nos produits</h3>
             </div>
             <div class="d-flex justify-content-between mb-5 product-content">
                 <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet iron</p>
                     <p class="price-product">199.90€</p>
@@ -312,7 +301,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet atlas</p>
                     <p class="price-product">204.90€</p>
@@ -324,7 +313,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet mars</p>
                     <p class="price-product">189.90€</p>
@@ -336,13 +325,13 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
-                        </video>  
-                    </a>    
+                        </video>
+                    </a>
                     <p class="title-product">Bracelet moon</p>
                     <p class="price-product">179.90€</p>
                     <a href="#">
                         <button class="rounded-btn">Acheter</button>
-                    </a>    
+                    </a>
                 </div>
             </div>
             <div class="d-flex justify-content-between product-content">
@@ -350,8 +339,8 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
-                        </video> 
-                    </a> 
+                        </video>
+                    </a>
                     <p class="title-product">Bracelet iron</p>
                     <p class="price-product">199.90€</p>
                     <a href="#">
@@ -362,7 +351,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet atlas</p>
                     <p class="price-product">204.90€</p>
@@ -374,7 +363,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet mars</p>
                     <p class="price-product">189.90€</p>
@@ -386,7 +375,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet moon</p>
                     <p class="price-product">179.90€</p>
@@ -400,8 +389,7 @@
     <section id="testimonial">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Testimonials</h3>
+                <h3 class="title">Testimonials</h3>
             </div>
             <div class="my-5 py-5 text-black">
                 <div class="row d-flex justify-content-center">

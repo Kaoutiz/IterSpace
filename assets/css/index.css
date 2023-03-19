@@ -1,106 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* BEGIN: Global */
-
-html {
-    scroll-behavior: fast;
-  }
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-    color: #fff;
+/* BEGIN : Global */
+header, section{
+    height:100vh;
+    display: flex;
 }
-
-ul{
-    padding: 0;
-}
-
-a{
-    padding: 0;
-    margin: 0;
-    outline: none;
-    text-decoration: none;
-    color: #fff;
-}
-
-input{
-    outline: none;
-}
-
-.container{
-    width: 960px;
-    margin: 0 auto;
-}
-
-section{
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.rounded-btn{
-    min-width: 130px;
-    justify-content: center;
-    height: 40px;
-    border: none;
-    border-radius: 50px;
-    background-image: -moz-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -webkit-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);
-    background-image: -ms-linear-gradient( 170deg, rgb(91,21,135) 0%, rgb(60,57,144) 45%, rgb(29,93,153) 100%);  
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.rounded-btn:hover{
-    background-image: -moz-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
-    background-image: -webkit-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
-    background-image: -ms-linear-gradient( 170deg, rgb(29,93,153) 0%, rgb(60,57,144) 55%, rgb(91,21,135) 100%);
-}
-
-h1{
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 60px;
-}
-
-h2{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 200;
-    margin-bottom: 20px;
-}
-
-h3{
-    font-size: 65px; 
-}
-
-h4{
-    font-weight: 800;
-    font-size: 30px;
-}
-
-.section-title h3 {
-    position: relative;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.title::after{
-    content: '';
-    transform-origin: 0 0;
-    transform: scaleX(0);
-    height: 20px;
-    background-color: red;
-    position: relative;
-    top: 70px;
-}
-
-/* END: Global */
+/* END : Global */
 
 /* BEGIN: Header */
 
@@ -242,7 +145,7 @@ video#video_principal{
     color: #000000;
 }
 
-#next-calendar-btn i, #previous-calendar-btn i{
+#next-calendar-btn i{
     color: #fff !important;
     font-weight: 200;
 }
@@ -399,7 +302,7 @@ video#video_principal{
     font-weight: bold;
 }
 
-#reservation #calendar #next-calendar-btn i, #reservation #calendar #previous-calendar-btn i{
+#reservation #calendar #next-calendar-btn i{
     font-size: 20px;
     font-weight: bold;
 }
@@ -443,6 +346,31 @@ video#video_principal{
 #produits .product-content{
     min-height: 300px;
 }
+#produits h3{
+    z-index: 10;
+    width: auto;
+}
+#produits:hover h3:after{
+    left: 0;
+    transform: scaleX(0.45);
+}
+#produits h3::after{
+    content: '';
+    transform-origin: 0 0;
+    transform: scaleX(0.45);
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: red;
+    opacity: 1;
+    transition: transform .3s, left .3s;
+    z-index: -1;
+    transform: scaleX(0.45);
+    left: 100%;
+}
 
 /* END: Produits */
 
@@ -482,20 +410,54 @@ video#video_principal{
 
 .quote-right{
     position: absolute;
-    bottom: 5px;
-    background: red;
-    opacity: 1;
-    transition: transform .4s, left .4s;
-    z-index: -1;
-    left: 100%;
-    width: 40%;
-}
-section:hover .title:after{
-    transform: scaleX(1);
-    left: 0%;
-}
-.title{
-    z-index: 1;
+    z-index: 10;
+    bottom: -10px;
+    right: 0;
 }
 
-/* END: Global */
+.outer:before{
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+
+.inner:after{
+    bottom:0; right:0;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+}
+
+#testimonial i{
+    color: white;
+    font-size: 40px;
+}
+
+.carousel-indicators button{
+    margin: 0 4px 0 4px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+  }
+
+  .carousel-indicators .active{
+    background-color: white;
+  }
+
+  .carousel-item p{
+    font-weight: 200;
+  } 
+
+/* END: Testimonials */
+
+/* BEGIN: Footer */
+
+footer{
+    background-color: black;
+}
+
+/* END: Footer */

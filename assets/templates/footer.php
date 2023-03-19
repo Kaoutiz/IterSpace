@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+<link rel="stylesheet" type="text/css" href="/iterspace/assets/css/footer.css">
 <footer id="footer">
     <div class="container row">
         <div class="footer-link col-3">
@@ -33,8 +33,8 @@
         <div id="partenaires">
             <h3>Nos partenaires</h3>
             <div id="link-partenaires">
-                <a href="https://www.spacefox.shop/fr/" target="_blank" title="Site de SpaceFox"><img src="./assets/img/space-fox-logo.svg" alt="Logo de SpaceFox" width="64" height="64"></a>
-                <a href="https://www.spacex.com" target="_blank" title="Site de SpaceX"><img id="spacex-logo" src="./assets/img/SpaceX-Logo.svg" alt="Logo de Space X" width="150" height="20"></a>
+                <a href="https://www.spacefox.shop/fr/" target="_blank" title="Site de SpaceFox"><img src="/iterspace/assets/img/space-fox-logo.svg" alt="Logo de SpaceFox" width="64" height="64"></a>
+                <a href="https://www.spacex.com" target="_blank" title="Site de SpaceX"><img id="spacex-logo" src="/iterspace/assets/img/SpaceX-Logo.svg" alt="Logo de Space X" width="150" height="20"></a>
             </div>
         </div>
     </div>
