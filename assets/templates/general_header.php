@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/iterspace/assets/css/general_header.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/general_header.css">
 <header id="header">
     <div id="overlay">
         <?php include '../assets/templates/menu.php'; ?>
