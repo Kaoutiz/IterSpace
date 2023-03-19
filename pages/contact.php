@@ -156,6 +156,6 @@ récupérés dans des variables */
 <!-- END: LIBRAIRIES SCRIPTS -->
 
 <!-- BEGIN: SCRIPTS -->
-<script type="text/javascript" src="/iterspace/assets/js/contact-form.js"></script>
+<script type="text/javascript" src="../assets/js/contact-form.js"></script>
 
 </html>
