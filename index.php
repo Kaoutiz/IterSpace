@@ -296,7 +296,7 @@
                 <h3>Nos produits</h3>
             </div>
             <div class="d-flex justify-content-between mb-5 product-content">
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
@@ -308,7 +308,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
@@ -320,7 +320,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="400">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
@@ -332,7 +332,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="600">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
@@ -345,8 +345,8 @@
                     </a>
                 </div>
             </div>
-            <div class="d-flex justify-content-between product-content">
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
+            <div class="d-flex justify-content-between product-content second-line-product">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
@@ -358,7 +358,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
@@ -370,7 +370,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
@@ -382,7 +382,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-md-3 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
@@ -517,26 +517,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <footer id="footer">
         <div class="container row">
-            <div class="footer-link col-3">
+            <div class="footer-link col-6 col-sm-6 col-md-3 col-xl-3">
                 <h3>Confidentialité</h3>
                 <a href="#" target="_self" title="">Politique de Confidentialité</a>
                 <a href="#" target="_self" title="">Mentions légales</a>
                 <a href="#" target="_self" title="">Mes données personnelles</a>
             </div>
-            <div class="footer-link col-3">
+            <div class="footer-link col-6 col-sm-6 col-md-3 col-xl-3">
                 <h3>Nous suivre</h3>
                 <a href="#" target="_self" title="">Facebook</a>
                 <a href="#" target="_self" title="">Twitter</a>
                 <a href="#" target="_self" title="">Instagram</a>
                 <a href="#" target="_self" title="">TikTok</a>
             </div>
-            <div class="footer-link col-3">
+            <div class="footer-link col-6 col-sm-6 col-md-3 col-xl-3 mt-4 mt-sm-4 mt-md-0 mt-xl-0">
                 <h3>Contact</h3>
                 <a href="#" target="_self" title="">Nous contacter</a>
                 <a href="=mailto:#" target="_self" title="">contact@iterspace.fr</a>
                 <a href="tel:#" target="_self" title="">07.07.07.07.07</a>
             </div>
-            <div class="footer-link col-3">
+            <div class="footer-link col-6 col-sm-6 col-md-3 col-xl-3 mt-4 mt-sm-4 mt-md-0 mt-xl-0">
                 <h3>Restez informés</h3>
                 <form>
                     <label for="newsletter">Recevez nos offres spéciales et réductions</label>

@@ -582,7 +582,7 @@ section:hover .title:after{
     }
 
     #reservation #calendar #calendar-body{
-        height: 280px !important;
+        height: 255px !important;
     }
 
     .price_estimation{
@@ -595,6 +595,7 @@ section:hover .title:after{
 
     #calendar{
         margin-top: 10px;
+        padding: 10px;
     }
 
     #estimation{
@@ -604,6 +605,29 @@ section:hover .title:after{
     #reservation #calendar{
         min-height: 0 !important;
     }
+    
+    .product-content{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    .video-bracelet{
+        margin-bottom: 150px;
+    }
+
+    .second-line-product{
+        display: none !important;
+    }
+
+    .quote-left{
+        top: 10px !important;
+    }
+
+    .quote-right{
+        bottom: 10px !important;
+    }
+
+
 }
 
 /* END: RESPONSIVE */
