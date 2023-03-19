@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let prenom = document.getElementById("prenom");
     let email = document.getElementById("email");
     let telephone = document.getElementById("telephone");;
+    let message = document.getElementById("message");;
     /* Le bouton de validation */
     let bouton = document.getElementById("envoyer");
 
@@ -16,24 +17,25 @@ window.addEventListener("DOMContentLoaded", function () {
         email.style.backgroundColor = "";
         prenom.style.backgroundColor = "";
         telephone.style.backgroundColor = "";
+        message.style.backgroundColor = "";
 
         /* On vérifie ques les champs sont bien remplies */
         /* Si les données ne sont pas correctement entrées, nous le montrons à l'utilisateur pour qu'il puisse recommencer correctement */
 
-        if (((/^[0-9]+\/[0-9]+\/[0-9]+$/.test(nom.value) === false) || (nom.value == "JJ/MM/AAAA"))) {
+        if (((/[A-Za-z]+/i.test(nom.value) === false) || (nom.value == ""))) {
             nom.style.backgroundColor = "red";
         };
-        if (email.value == "") {
+        if (((/[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+/i.test(email.value) === false) || (email.value == ""))) {
             email.style.backgroundColor = "red";
         };
-        if (prenom.innerHTML == "") {
+        if (((/[A-Za-z]+/i.test(prenom.value) === false) || (prenom.value == ""))) {
             prenom.style.backgroundColor = "red";
         };
-        if (/#(?:[a-f\d]{3}){1,2}\b/.test(telephone.value) === false) {
+        if ( /^((\+)33|0)[1-9](\d{2}){4}$/i.test(telephone.value) === false) {
             telephone.style.backgroundColor = "red";
         };
-        if ((vitre_electrique.checked === false) && (gps.checked === false) && (peinture.checked === false) && (lecteur_CD.checked === false)) {
-            vitre_electrique.parentNode.style.backgroundColor = "red";
+        if (message.value == "") {
+            message.style.backgroundColor = "red";
         };
     });
 });
