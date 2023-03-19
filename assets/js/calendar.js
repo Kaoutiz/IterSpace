@@ -1,5 +1,4 @@
 export function calendar(){
-  
     /* DEBUT: Récupération du contenue XML */
 
     // chemin du fichier XML
@@ -39,7 +38,6 @@ export function calendar(){
             // créer une div pour le mois
             const monthDiv = document.createElement('div');
             monthDiv.setAttribute('id', monthName === 'February' ? 'mounth-left' : 'mounth-right');
-            monthDiv.setAttribute('class', 'month');
             
             // parcourir les jours du mois
             const days = month.getElementsByTagName('day');
@@ -139,9 +137,16 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "block";
-        document.getElementById("info_choice").style.display = "block";
-        document.getElementById("estimation").style.marginTop = "0"
+
+        // On vérifie si on est sur un ordi ou un mobile
+        if (window.matchMedia("(max-width: 930px)").matches) {
+            
+        } else {
+            document.getElementsByClassName("price_estimation")[0].style.display = "block";
+            document.getElementById("info_choice").style.display = "block";
+            document.getElementById("estimation").style.marginTop = "0"
+        }
+
         btnNext.children[0].textContent = "Continuer"
         
 
@@ -167,9 +172,16 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "block";
-        document.getElementById("info_choice").style.display = "block";
-        document.getElementById("estimation").style.marginTop = "0"
+
+        // On vérifie si on est sur un ordi ou un mobile
+        if (window.matchMedia("(max-width: 930px)").matches) {
+            
+        } else {
+            document.getElementsByClassName("price_estimation")[0].style.display = "block";
+            document.getElementById("info_choice").style.display = "block";
+            document.getElementById("estimation").style.marginTop = "0"
+        }
+        
         btnNext.children[0].textContent = "Continuer"
         
 
@@ -307,9 +319,16 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "block";
-        document.getElementById("info_choice").style.display = "block";
-        document.getElementById("estimation").style.marginTop = "0"
+
+        // On vérifie si on est sur un ordi ou un mobile
+        if (window.matchMedia("(max-width: 930px)").matches) {
+            
+        } else {
+            document.getElementsByClassName("price_estimation")[0].style.display = "block";
+            document.getElementById("info_choice").style.display = "block";
+            document.getElementById("estimation").style.marginTop = "0"
+        }
+
         btnNext.children[0].textContent = "Continuer"
         
 
@@ -435,9 +454,16 @@ export function calendar(){
             step2.classList.remove("d-none");
             step3.classList.add("d-none");
             btnPrevious.classList.remove("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "none";
-            document.getElementById("info_choice").style.display = "none";
-            document.getElementById("estimation").style.marginTop = "20px"
+
+            // On vérifie si on est sur un ordi ou un mobile
+            if (window.matchMedia("(max-width: 930px)").matches) {
+                
+            } else {
+                document.getElementsByClassName("price_estimation")[0].style.display = "none";
+                document.getElementById("info_choice").style.display = "none";
+                document.getElementById("estimation").style.marginTop = "20px"
+            }
+
             btnNext.children[0].textContent = "Continuer"
             step_reservation++;
         }else if(step_reservation === 2){
@@ -445,9 +471,16 @@ export function calendar(){
             step2.classList.add("d-none");
             step3.classList.remove("d-none");
             btnPrevious.classList.remove("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "none";
-            document.getElementById("info_choice").style.display = "none";
-            document.getElementById("estimation").style.marginTop = "20px"
+
+            // On vérifie si on est sur un ordi ou un mobile
+            if (window.matchMedia("(max-width: 930px)").matches) {
+                
+            } else {
+                document.getElementsByClassName("price_estimation")[0].style.display = "none";
+                document.getElementById("info_choice").style.display = "none";
+                document.getElementById("estimation").style.marginTop = "20px"
+            }
+
             btnNext.children[0].textContent = "Payer"
             step_reservation++;
         }
@@ -460,9 +493,16 @@ export function calendar(){
             step2.classList.add("d-none");
             step3.classList.add("d-none");
             btnPrevious.classList.add("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "block";
-            document.getElementById("info_choice").style.display = "block";
-            document.getElementById("estimation").style.marginTop = "0"
+
+            // On vérifie si on est sur un ordi ou un mobile
+            if (window.matchMedia("(max-width: 930px)").matches) {
+                
+            } else {
+                document.getElementsByClassName("price_estimation")[0].style.display = "block";
+                document.getElementById("info_choice").style.display = "block";
+                document.getElementById("estimation").style.marginTop = "0"
+            }
+            
             btnNext.children[0].textContent = "Continuer"
             step_reservation--;
         }else if(step_reservation === 3){
@@ -470,9 +510,17 @@ export function calendar(){
             step2.classList.remove("d-none");
             step3.classList.add("d-none");
             btnPrevious.classList.remove("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "none";
-            document.getElementById("info_choice").style.display = "none";
-            document.getElementById("estimation").style.marginTop = "20px";
+
+            // On vérifie si on est sur un ordi ou un mobile
+            if (window.matchMedia("(max-width: 930px)").matches) {
+                
+            } else {
+                document.getElementsByClassName("price_estimation")[0].style.display = "block";
+                document.getElementById("info_choice").style.display = "block";
+                document.getElementById("estimation").style.marginTop = "0"
+            }
+
+            
             btnNext.children[0].textContent = "Continuer"
             step_reservation--;
         }
