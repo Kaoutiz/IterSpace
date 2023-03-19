@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
-
+    <link rel="icon" type="image/png" href="../assets/img/iterspace_logo.png" />
     <!-- BEGIN: LIBRAIRIES -->
     <link rel="stylesheet" href="../assets/css/boxicons.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
