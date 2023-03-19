@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div id="presnation-img" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" data-aos="fade-left">
-                    <img src="/iterspace/assets/img/iss_schema.png" class="iss_schema" alt="iss_schema" />
+                    <img src="../assets/img/iss_schema.png" class="iss_schema" alt="iss_schema" />
                 </div>
                 <div id="presentation-p" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-down">
                     <h4>Nos voyages</h4>
@@ -90,6 +90,7 @@
 <!-- END: LIBRAIRIES SCRIPTS -->
 
 <!-- BEGIN: SCRIPTS -->
+<script type="module" src="../assets/js/index.js"></script>
 <!-- BEGIN: SCRIPTS -->
 
 </html>

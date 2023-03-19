@@ -17,7 +17,6 @@
     <!-- BEGIN: STYLES -->
     <link rel="stylesheet" href="assets/css/range.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/index.css">
     <!-- END: STYLES -->
 </head>
 
@@ -38,10 +37,20 @@
                     <li><a href="pages/contact.php">Contact</a></li>
                 </ul>
                 <ul class="nav-right d-flex align-center">
-                    <li><a href="#">Se connecter</a></li>
-                    <i class='bx bx-menu'></i>
+                    <li><a href="pages/connexion.php">Se connecter</a></li>
+                    <i class='bx bx-menu' id="nav-mobile-icon"></i>
                 </ul>
             </nav>
+            <div id="nav-mobile">
+                <div class="d-flex align-items-center justify-content-end close-nav-mobile" id="close-nav-mobile"><span style="margin-right:5px">Fermer</span><i class='bx bx-x'></i></div>
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="pages/connexion.php">Se connecter</a></li>
+                    <li><a href="pages/qui-sommes-nous.php">Qui sommes-nous ?</a></li>
+                    <li><a href="pages/catalogue.php">Catalogue</a></li>
+                    <li><a href="pages/contact.php">Contact</a></li>
+                </ul>
+            </div>
             <div id="title-zone">
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
@@ -49,7 +58,7 @@
                     <a href="#reservation"><button id="reserver-btn" class="rounded-btn">Réservez maintenant</button></a>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-center text-center">
+            <div class="d-flex justify-content-center align-center text-center zone-compteur">
                 <div class="compteur-box">
                     <p class="number" id="number-voyage">0</p>
                     <p class="title-compteur">Voyages effectués</p>
