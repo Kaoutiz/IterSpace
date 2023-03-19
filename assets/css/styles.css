@@ -95,9 +95,21 @@ h4{
     transform-origin: 0 0;
     transform: scaleX(0);
     height: 20px;
-    background-color: red;
-    position: relative;
-    top: 70px;
+    position: absolute;
+    bottom: 5px;
+    background: red;
+    opacity: 1;
+    transition: transform .4s, left .4s;
+    z-index: -1;
+    left: 100%;
+    width: 40%;
+}
+section:hover .title:after{
+    transform: scaleX(1);
+    left: 0%;
+}
+.title{
+    z-index: 1;
 }
 
 /* END: Global */
