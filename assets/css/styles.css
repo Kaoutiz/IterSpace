@@ -196,7 +196,7 @@ video#video_principal{
 
 #title-zone{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -722,6 +722,10 @@ section:hover .title:after{
     #fusee_back{
         top: 60%;
         right: 50px;
+    }
+
+    #title-zone{
+        height: 50vh !important;
     }
 }
 
