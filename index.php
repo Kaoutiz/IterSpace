@@ -17,6 +17,7 @@
     <!-- BEGIN: STYLES -->
     <link rel="stylesheet" href="assets/css/range.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <!-- END: STYLES -->
 </head>
 
@@ -29,17 +30,7 @@
             <source src="assets/videos/header.mp4" type="video/mp4">
         </video>
         <div id="overlay">
-            <nav>
-                <ul class="nav-left">
-                    <li><a href="#">Qui sommes-nous ?</a></li>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav-right d-flex align-center">
-                    <li><a href="#">Se connecter</a></li>
-                    <i class='bx bx-menu'></i>
-                </ul>
-            </nav>
+            <?php include 'assets/templates/menu.php'; ?>
             <div id="title-zone">
                 <div id="title-site">
                     <h1><span class="title-site-light">iter</span>space</h1>
@@ -161,33 +152,33 @@
                             <option value="Vega">Vega</option>
                         </select>
                     </div>
-                    <div id="budget" data-aos="zoom-in-up" data-aos-delay= "200">
-                    <div class="range">
-                        <label class="mb-2">Budget en K€</label>
-                        <div class="range-label mb-3 d-flex justify-content-between">
-                            <label>100K €</label>
-                            <label>+1 000K €</label>
+                    <div id="budget" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="range">
+                            <label class="mb-2">Budget en K€</label>
+                            <div class="range-label mb-3 d-flex justify-content-between">
+                                <label>100K €</label>
+                                <label>+1 000K €</label>
+                            </div>
+                            <div class="range-slider">
+                                <span class="range-selected"></span>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="min" min="0" max="1000" value="0" step="200">
+                                <input type="range" class="max" min="0" max="1000" value="1000" step="200">
+                            </div>
+                            <div class="range-price d-none">
+                                <label for="min">Min</label>
+                                <input type="number" name="min" value="0" hidden>
+                                <label for="max">Max</label>
+                                <input type="number" name="max" value="1000" hidden>
+                            </div>
                         </div>
-                        <div class="range-slider">
-                            <span class="range-selected"></span>
-                        </div>
-                        <div class="range-input">
-                            <input type="range" class="min" min="0" max="1000" value="0" step="200">
-                            <input type="range" class="max" min="0" max="1000" value="1000" step="200" >
-                        </div>
-                        <div class="range-price d-none">      
-                            <label for="min">Min</label>
-                            <input type="number" name="min" value="0" hidden>      
-                            <label for="max">Max</label>
-                            <input type="number" name="max" value="1000" hidden>      
-                        </div>
-                        </div> 
                     </div>
                 </div>
-                <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay= "400">
+                <div id="calendar" class="col-12 col-sm-12 col-md-9 col-xl-9" data-aos="zoom-in" data-aos-delay="400">
                     <div id="calendar-header">
                         <div class="d-flex align-items-start">
-                            <p class="d-flex align-items-center"><i class='bx bx-dollar-circle'></i><span class="info-price">Les prix sont en milliers d'euros</span></p> 
+                            <p class="d-flex align-items-center"><i class='bx bx-dollar-circle'></i><span class="info-price">Les prix sont en milliers d'euros</span></p>
                         </div>
                         <div id="mounth-title" class="d-flex justify-content-between align-items-center mt-2">
                             <div class="border border-dark rounded-circle align-items-center">
@@ -198,20 +189,20 @@
                             <div class="border border-dark rounded-circle align-items-center">
                                 <i class='bx bx-chevron-right'></i>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div id="calendar-body" class="d-flex justify-content-between">
                         <!-- Le HTML ici est généré depuis calendar.js grâce au XML -->
                     </div>
                     <div id="estimation" class="d-none">
-                        <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>  
+                        <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>
                         <a href="#"><button id="next-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button></a>
                     </div>
-                    <div id="info_choice" class="d-none"> 
-                        <h2 class="fusee_value" id="fusee_value"></h2>  
-                        <p class="choice"><span id="sieges_value"></span></p> 
+                    <div id="info_choice" class="d-none">
+                        <h2 class="fusee_value" id="fusee_value"></h2>
+                        <p class="choice"><span id="sieges_value"></span></p>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </section>
@@ -225,7 +216,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet iron</p>
                     <p class="price-product">199.90€</p>
@@ -237,7 +228,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet atlas</p>
                     <p class="price-product">204.90€</p>
@@ -249,7 +240,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet mars</p>
                     <p class="price-product">189.90€</p>
@@ -261,13 +252,13 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
-                        </video>  
-                    </a>    
+                        </video>
+                    </a>
                     <p class="title-product">Bracelet moon</p>
                     <p class="price-product">179.90€</p>
                     <a href="#">
                         <button class="rounded-btn">Acheter</button>
-                    </a>    
+                    </a>
                 </div>
             </div>
             <div class="d-flex justify-content-between product-content">
@@ -275,8 +266,8 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
-                        </video> 
-                    </a> 
+                        </video>
+                    </a>
                     <p class="title-product">Bracelet iron</p>
                     <p class="price-product">199.90€</p>
                     <a href="#">
@@ -287,7 +278,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet atlas</p>
                     <p class="price-product">204.90€</p>
@@ -299,7 +290,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet mars</p>
                     <p class="price-product">189.90€</p>
@@ -311,7 +302,7 @@
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
-                        </video>  
+                        </video>
                     </a>
                     <p class="title-product">Bracelet moon</p>
                     <p class="price-product">179.90€</p>
