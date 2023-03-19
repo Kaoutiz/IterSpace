@@ -66,8 +66,7 @@
     <section id="presentation">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Presentation</h3>
+                <h3 class="title">Presentation</h3>
             </div>
             <div class="row">
                 <div id="presnation-p" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-down">
@@ -92,8 +91,7 @@
     <section id="actus">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Actualités</h3>
+                <h3 class="title">Actualités</h3>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -144,8 +142,7 @@
     <section id="reservation">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Réservations</h3>
+                <h3 class="title">Réservations</h3>
             </div>
             <div class="calendar-wrapper d-flex justify-content-around">
                 <div id="filter" class="col-12 col-sm-12 col-md-3 col-xl-3">
@@ -221,7 +218,7 @@
     <section id="produits">
         <div class="container">
             <div class="section-title">
-                <h3>Nos produits</h3>
+                <h3 class="title">Nos produits</h3>
             </div>
             <div class="d-flex justify-content-between mb-5 product-content">
                 <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
@@ -328,8 +325,7 @@
     <section id="testimonial">
         <div class="container">
             <div class="section-title">
-                <div class="red-line"></div>
-                <h3>Testimonials</h3>
+                <h3 class="title">Testimonials</h3>
             </div>
             <div class="my-5 py-5 text-black">
                 <div class="row d-flex justify-content-center">
