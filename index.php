@@ -224,7 +224,7 @@
                 <h3>Nos produits</h3>
             </div>
             <div class="d-flex justify-content-between mb-5 product-content">
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
@@ -236,7 +236,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
@@ -248,7 +248,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="400">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
@@ -260,7 +260,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="600">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
@@ -274,7 +274,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between product-content">
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MARS_ZOOM.mp4" type="video/mp4">
@@ -286,7 +286,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/MOON_ZOOM.mp4" type="video/mp4">
@@ -298,7 +298,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/IRON_ZOOM.mp4" type="video/mp4">
@@ -310,7 +310,7 @@
                         <button class="rounded-btn">Acheter</button>
                     </a>
                 </div>
-                <div class="col-md-3 col-xs-12 video-bracelet text-center">
+                <div class="col-md-3 col-xs-12 video-bracelet text-center" data-aos="zoom-in" data-aos-offset="200">
                     <a href="#">
                         <video width="100%" height="100%" muted>
                             <source src="assets/videos/ATLAS_ZOOM.mp4" type="video/mp4">
@@ -333,7 +333,7 @@
             </div>
             <div class="my-5 py-5 text-black">
                 <div class="row d-flex justify-content-center">
-                    <div id="avis-card" class="col-md-12">
+                    <div id="avis-card" class="col-md-12" data-aos="flip-left">
                         <div class="text-center mb-4 pb-2 quote-left">
                             <i class='bx bxs-quote-left'></i>
                         </div>
