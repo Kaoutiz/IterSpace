@@ -288,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="estimation" class="d-none d-flex">
+                    <div id="estimation" class="d-none d-flex mt-3">
                         <h2 class="price_estimation">Estimation du prix du séjour: <span id="price_value"></span> 000 €</h2>  
                         <button id="previous-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center d-none"><i class='bx bx-chevron-left'></i> <span>Précendent</span></button>
                         <button id="next-calendar-btn" class="rounded-btn rounded-pill d-flex align-items-center"><span>Continuer</span> <i class='bx bx-chevron-right'></i></button>
