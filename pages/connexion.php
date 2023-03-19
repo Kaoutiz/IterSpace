@@ -22,7 +22,7 @@
 
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
-
+    <a href="#header"><div id="fusee_back"></div></a>
     <section id="connexion">
         <div class="container">
             <div class="section-title">
@@ -30,13 +30,13 @@
             </div>
             <form id="contact-form" method="post" action="connexion.php" role="form">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="identifiant"><span style="margin-right: 5px">Email</span><span class="text-danger">*</span></label>
                         <input type="email" class="form-control mb-2" id="email" name="email" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="password" ><span style="margin-right: 5px">Mot de passe</span><span class="text-danger">*</span></label>
                         <input type="password" class="form-control mb-2" id="password" name="password" required>
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
                         <button type="submit" class="rounded-btn" id="envoyer">Se connecter</button>
                     </div>
                 </div>
