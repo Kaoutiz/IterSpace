@@ -139,8 +139,8 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "flex";
-        document.getElementById("info_choice").style.display = "flex";
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
         document.getElementById("estimation").style.marginTop = "0"
         btnNext.children[0].textContent = "Continuer"
         
@@ -167,8 +167,8 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "flex";
-        document.getElementById("info_choice").style.display = "flex";
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
         document.getElementById("estimation").style.marginTop = "0"
         btnNext.children[0].textContent = "Continuer"
         
@@ -307,8 +307,8 @@ export function calendar(){
         step2.classList.add("d-none");
         step3.classList.add("d-none");
         btnPrevious.classList.add("d-none");
-        document.getElementsByClassName("price_estimation")[0].style.display = "flex";
-        document.getElementById("info_choice").style.display = "flex";
+        document.getElementsByClassName("price_estimation")[0].style.display = "block";
+        document.getElementById("info_choice").style.display = "block";
         document.getElementById("estimation").style.marginTop = "0"
         btnNext.children[0].textContent = "Continuer"
         
@@ -460,8 +460,8 @@ export function calendar(){
             step2.classList.add("d-none");
             step3.classList.add("d-none");
             btnPrevious.classList.add("d-none");
-            document.getElementsByClassName("price_estimation")[0].style.display = "flex";
-            document.getElementById("info_choice").style.display = "flex";
+            document.getElementsByClassName("price_estimation")[0].style.display = "block";
+            document.getElementById("info_choice").style.display = "block";
             document.getElementById("estimation").style.marginTop = "0"
             btnNext.children[0].textContent = "Continuer"
             step_reservation--;
