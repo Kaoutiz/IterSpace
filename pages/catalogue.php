@@ -22,6 +22,8 @@
 
 <body>
     <?php include '../assets/templates/general_header.php'; ?>
+    
+    
 
     <?php include '../assets/templates/footer.php'; ?>
 </body>

@@ -61,16 +61,17 @@
             </div>
             <div class="row">
                 <div id="presnation-p" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-down">
-                    <h4>Titre</h4>
+                    <h4>Nos valeurs</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        Bienvenue dans le monde passionnant d'Iterspace, une société pionnière dans le domaine du
+                        tourisme spatial. Nous sommes fiers de vous présenter notre offre exclusive de voyages
+                        touristiques dans l'espace, qui vous emmèneront au-delà de l'atmosphère terrestre pour
+                        vivre une expérience unique et inoubliable.
+                        <br>
+                        Notre entreprise est fondée sur une passion
+                        pour l'exploration spatiale et la découverte de nouveaux horizons. Nous sommes convaincus
+                        que l'avenir de l'humanité se trouve dans l'exploration de l'espace, et nous avons donc
+                        créé Iterspace pour permettre à chacun de réaliser ce rêve.
                     </p>
                 </div>
                 <div id="presnation-img" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" data-aos="fade-left">
