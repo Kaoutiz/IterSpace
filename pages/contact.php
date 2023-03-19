@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="icon" type="image/png" href="../assets/img/iterspace_logo.png" />
 
     <!-- BEGIN: LIBRAIRIES -->
     <link rel="stylesheet" href="../assets/css/boxicons.css">
@@ -82,7 +83,7 @@ récupérés dans des variables */
                     $validation = false;
                 }
 
-                if (empty($message) || (strlen($message) >= 10)) {
+                if (empty($message) || (strlen($message) >= 300)) {
                     $message = "<strong>Le message n'est pas valide ou trop long (300 caractères maximum).</strong>";
                     $validation = false;
                 }
@@ -96,7 +97,7 @@ récupérés dans des variables */
                         "</li><li> Message : " . $message .
                         "</li></ul>";
                 } else{
-                    echo "<p>Votre formulaire comporte des erreurs, rechargez la page et recommençais</p>";
+                    echo "<p>Votre formulaire comporte des erreurs, rechargez la page et recommencez !</p>";
                 }
             } else { ?>
 

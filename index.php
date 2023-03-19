@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="icon" type="image/png" href="assets/img/iterspace_logo.png" />
 
     <!-- BEGIN: LIBRAIRIES -->
     <link rel="stylesheet" href="assets/css/boxicons.css">
@@ -38,7 +39,7 @@
                     <li><a href="pages/contact.php">Contact</a></li>
                 </ul>
                 <ul class="nav-right d-flex align-center">
-                    <li><a href="#">Se connecter</a></li>
+                    <li><a href="pages/connexion.php">Se connecter</a></li>
                     <i class='bx bx-menu'></i>
                 </ul>
             </nav>
@@ -68,7 +69,7 @@
     <section id="presentation">
         <div class="container">
             <div class="section-title">
-                <h3 class="title">Presentation</h3>
+                <h3 class="title">Présentation</h3>
             </div>
             <div class="row">
                 <div id="presnation-p" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-down">
