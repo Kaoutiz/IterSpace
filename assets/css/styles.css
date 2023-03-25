@@ -767,4 +767,10 @@ video#video_principal{
     }
 }
 
+@media screen and (max-width: 930px) {
+    .second-line-product{
+        display: none;
+    }
+}
+
 /* END: RESPONSIVE */
