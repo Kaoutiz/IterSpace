@@ -767,7 +767,7 @@ video#video_principal{
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .second-line-product{
         display: none;
     }
