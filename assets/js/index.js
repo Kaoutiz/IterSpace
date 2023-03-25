@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // On véirfie si la page est l'index comme ça on lance les fonctions lié à cette page uniquement sur celle-ci
     let url = window.location.href;
 
-    if (url.indexOf("index.php") !== -1) {
+    if (url.indexOf("index.php") !== -1 || url.indexOf("") !== -1) {
         Scroll();
         calendar();
         productHover();
     }
+    
     
     // On lance les autres fonctions
     nav();
